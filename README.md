@@ -36,31 +36,31 @@ PyLe > Python Learning
 3. => Termcolor
 
 ### Machine Learning :
-[1] => Scikit-learn
-[2] => Keras 
-[3] => Xgboost
-[4] => Statsmodels
-[5] => Tensorflow 
+1. => Scikit-learn
+2. => Keras 
+3. => Xgboost
+4. => Statsmodels
+5. => Tensorflow 
 
 ### Telegram Robots :
-[1] => Python-telegram-bot
-[2] => Pyrogram
-[3] => Telegram
+1. => Python-telegram-bot
+2. => Pyrogram
+3. => Telegram
 
 ### Game Development :
-[1] => Pygame
-[2] => Turtles
-[3] => PyOpenGL
+1. => Pygame
+2. => Turtles
+3. => PyOpenGL
 
 ### File & Text Encryption :
-[1] => Cryptography
-[2] => Pycrypto 
-[3] => pyAesCrypt
+1. => Cryptography
+2. => Pycrypto 
+3. => pyAesCrypt
 
 ### Python SQL Libraries :
-[1] => SQLite
-[2] => MySQL 
-[3] => PostgreSQL
+1. => SQLite
+2. => MySQL 
+3. => PostgreSQL
 
 
 ### Installation :
