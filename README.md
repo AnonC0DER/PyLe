@@ -31,9 +31,9 @@ PyLe > Python Learning
 0. Exit  
 
 ### Colors :
-[1] => Colored
-[2] => Colorma
-[3] => Termcolor
+1. => Colored
+2. => Colorma
+3. => Termcolor
 
 ### Machine Learning :
 [1] => Scikit-learn
