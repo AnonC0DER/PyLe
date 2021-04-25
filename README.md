@@ -31,35 +31,36 @@ PyLe > Python Learning
 0. Exit  
 
 ### Colors :
-1. Nmap
-2. WPScan
-3. CMS Scanner
-4. XSStrike
+[1] => Colored
+[2] => Colorma
+[3] => Termcolor
 
 ### Machine Learning :
-1. Cupp
-2. Ncrack
-3. CeWL
+[1] => Scikit-learn
+[2] => Keras 
+[3] => Xgboost
+[4] => Statsmodels
+[5] => Tensorflow 
 
 ### Telegram Robots :
-1. Aircrack-ng
-2. Wifite
-3. Kismet
+[1] => Python-telegram-bot
+[2] => Pyrogram
+[3] => Telegram
 
 ### Game Development :
-1. Commix
-2. ATSCAN
-3. Sqlmap
-4. Metasploit
+[1] => Pygame
+[2] => Turtles
+[3] => PyOpenGL
 
 ### File & Text Encryption :
-1. Responder
-2. Mitmproxy
+[1] => Cryptography
+[2] => Pycrypto 
+[3] => pyAesCrypt
 
 ### Python SQL Libraries :
-1. Nikto
-2. Joomscan
-3. Vbscan
+[1] => SQLite
+[2] => MySQL 
+[3] => PostgreSQL
 
 
 ### Installation :
