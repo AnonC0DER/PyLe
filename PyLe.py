@@ -1595,6 +1595,9 @@ def start():
 ▐░▌               ▐░▌     ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ 
 ▐░▌               ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
  ▀                 ▀       ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
+ ---------
+| Version |
+ ---------
 ''')
 
     print (Fore.YELLOW + '[$]' + Fore.LIGHTCYAN_EX+ ' Learn Python Libraries by Python script.')
