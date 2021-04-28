@@ -8,6 +8,7 @@ from os import system
 from colorama import Fore
 from time import sleep
 import random
+import urllib.request
 
 
 #again
