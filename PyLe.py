@@ -1551,17 +1551,21 @@ con.close()''')
         again_1()
 
 
-
-
-
 #Update
 def update():
-    system('git clone https://github.com/AnonC0DER/PyLe.git')
-    print(Fore.GREEN + '~>' + Fore.BLUE + 'Updated successfully !')
-    sleep(1.5)
-    system('cd PyLe')
-    system('clear')
-    system('python3 PyLe.py')
+    print(Fore.RED + '[#]' + Fore.WHITE + ' This is 1.0 version')
+    print(Fore.YELLOW + '[?]' + Fore.GREEN+ ' Do you wanna download last version From github? (Y/N)')
+    version_pyle = input(Fore.YELLOW +'PyLe ~$ ')
+    if version_pyle.upper() == 'Y':
+        print(Fore.YELLOW + 'Please Wait ...')
+        urllib.request.urlretrieve('https://github.com/AnonC0DER/PyLe/archive/refs/heads/main.zip' , 'PyLe.zip')
+        system('clear')
+        print(Fore.GREEN + '~> Download completed !')
+    elif version_pyle.upper() == 'N':
+        start()
+    else:
+        print(Fore.RED + '[!] Wrong Value')
+        again_1()
 
 
 #About Me && contact Me
