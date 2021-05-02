@@ -10,6 +10,10 @@ PyLe is here to helps you !
 I have many ideas for PyLe, But i need to know someone know my script.
 So, If you like PyLe idea help me improve it :)
 
+### Installation :
+Easy installation :
+git clone https://github.com/AnonC0DER/PyLe.git
+
 ### Version 1.0
 
 ### What's meaning of PyLe?
@@ -63,11 +67,6 @@ PyLe > Python Learning
 1. => SQLite
 2. => MySQL 
 3. => PostgreSQL
-
-
-### Installation :
-Easy installation :
-git clone https://github.com/AnonC0DER/PyLe.git
 
 ### Donation : 
 15v1b5gsjMKkvVLRWjCxb8pzFvXjyWQBQ8
