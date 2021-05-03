@@ -10,7 +10,6 @@ from time import sleep
 import random
 import urllib.request
 
-
 #again
 def again_1():
     again_v = input(Fore.GREEN+'For Menu type (M) for Exit type (E) : ')
@@ -1601,7 +1600,7 @@ def start():
 ▐░▌               ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
  ▀                 ▀       ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
  -------------
-| Version 1.0 |
+| Version 1.1 |
  -------------
 ''')
 
@@ -1624,45 +1623,49 @@ def start():
 [0] Exit
 {-------------}''')
 
-    pyle_start = int(input(Fore.YELLOW + 'PyLe ~$ ')) 
+    try:
+        pyle_start = int(input(Fore.YELLOW + 'PyLe ~$ ')) 
 
-    if pyle_start == 1:
-        system('clear')
-        c_lib()
+        if pyle_start == 1:
+            system('clear')
+            c_lib()
 
-    elif pyle_start == 2:
-        system('clear')
-        machine_learning()
+        elif pyle_start == 2:
+            system('clear')
+            machine_learning()
+            
+        elif pyle_start == 3:
+            system('clear')
+            telegram_bots()
         
-    elif pyle_start == 3:
-        system('clear')
-        telegram_bots()
-      
-    elif pyle_start == 4:
-        system('clear')
-        game_dev()
+        elif pyle_start == 4:
+            system('clear')
+            game_dev()
 
-    elif pyle_start == 5:
-        system('clear')
-        ft_enc()
+        elif pyle_start == 5:
+            system('clear')
+            ft_enc()
 
-    elif pyle_start == 6:
-        system('clear')
-        sql_lib()
+        elif pyle_start == 6:
+            system('clear')
+            sql_lib()
 
-    elif pyle_start == 1000:
-        system('clear')
-        contact()
-        again_1()
+        elif pyle_start == 1000:
+            system('clear')
+            contact()
+            again_1()
 
-    elif pyle_start == 100:
-        system('clear')
-        update()
+        elif pyle_start == 100:
+            system('clear')
+            update()
 
-    elif pyle_start == 0:
-        print(Fore.YELLOW+'[-]──# Se You Later :)')
+        elif pyle_start == 0:
+            print(Fore.YELLOW+'[-]──# Se You Later :)')
 
-    else:
+        else:
+            print(Fore.RED+'[!]──# Wrong Value')
+            again_1()
+    except:
         print(Fore.RED+'[!]──# Wrong Value')
         again_1()
 
