@@ -1,3 +1,6 @@
+### New Update !
+.Bug fixes
+
 # PyLe
 'Learn and introduce Python libraries with PyLe'
 
@@ -14,7 +17,7 @@ So, If you like PyLe idea help me improve it :)
 Easy installation :
 git clone https://github.com/AnonC0DER/PyLe.git
 
-### Version 1.0
+### Version 1.1
 
 ### What's meaning of PyLe?
 PyLe > Python Learning
