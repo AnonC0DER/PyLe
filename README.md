@@ -71,7 +71,7 @@ PyLe > Python Learning
 2. => MySQL 
 3. => PostgreSQL
 
-### Donation : 
+### Donation for PyLe Website : 
 15v1b5gsjMKkvVLRWjCxb8pzFvXjyWQBQ8
 
 ### Screenshot : 
