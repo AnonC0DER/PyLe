@@ -1,5 +1,5 @@
-### New Update !
-.Bug fixes
+### New Update 1.5 !
+For beginners Menu Add !
 
 # PyLe
 'Learn and introduce Python libraries with PyLe'
@@ -17,7 +17,7 @@ So, If you like PyLe idea help me improve it :)
 Easy installation :
 git clone https://github.com/AnonC0DER/PyLe.git
 
-### Version 1.1
+### Version 1.5
 
 ### What's meaning of PyLe?
 PyLe > Python Learning
@@ -70,6 +70,9 @@ PyLe > Python Learning
 1. => SQLite
 2. => MySQL 
 3. => PostgreSQL
+
+### For Beginners :
+1. => Books
 
 ### Donation for PyLe Website : 
 15v1b5gsjMKkvVLRWjCxb8pzFvXjyWQBQ8
