@@ -2,7 +2,6 @@
 # <------First Version : v1.0------>
 # <------Help me improve it :)------>
 
-
 #imports
 from os import system
 from colorama import Fore
@@ -1551,9 +1550,212 @@ con.close()''')
         again_1()
 
 
+# For beginners
+def For_beginners():
+    print(random_color [0] + '''    
+   .-._.---'           .-.                                                      
+  (_) /               (_) )-.                   .-.                             
+     /--..-._.).--.      / __)    .-.  .-.      `-'.  .-..  .-.   .-.  ).--..   
+    /   (   )/          /    `. ./.-'_(   )    /    )/   ))/   )./.-'_/    / \  
+ .-/     `-'/          /'      )(__.'  `-/-'_.(__. '/   ('/   ( (__.'/    / ._) 
+(_/                 (_/  `----'      -._/                `-    `-        /         
+''')
+
+    print (Fore.YELLOW + '[#]' + Fore.MAGENTA+ ' Welcome to the Beginners Menue.')
+    print (Fore.YELLOW + '[#]' + Fore.MAGENTA+ ' In this section you can find books and movies suitable for starting Python.')
+    print (Fore.GREEN + '[#]' + Fore.MAGENTA+ ' What do you want?')
+    print (Fore.BLUE +'''
+<<<<<<<<--->>>>>>>>
+[1] => BooKs
+
+#####
+More Option Coming !
+#####
+
+[1000] ~> About Author && Contact Author
+[100] ~> Update
+[99] ~> Main Menu
+[0] ~> Exit
+<<<<<<<<--->>>>>>>>''')
+
+    for_beginners = int(input(Fore.YELLOW +'PyLe ~$ '))
+    if for_beginners == 1:
+        system('clear')
+        print (Fore.YELLOW + '[#]' + Fore.LIGHTMAGENTA_EX+ ' Here it is, Now you can choose your books :)')
+        print (Fore.LIGHTBLUE_EX +'''
+////////////////////////////////////////////////////////////////////
+| <1> => Learn Python in One Day                                   |
+| <2> => Python Programming for Beginners                          |
+| <3> => PYTHON : PYTHON'S COMPANION                               |
+| <4> => Black hat Python                                          |
+| <5> => Mastering Machine Learning with Python in Six Steps       |
+| <6> => Automate the boring stuff with python                     |
+|                                                                  |
+| [99] ~> Main Menu                                                |
+| [0] ~> Exit                                                      |
+////////////////////////////////////////////////////////////////////''')
+
+        books = int(input(Fore.YELLOW +'PyLe ~$ '))
+        if books == 1:
+            print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Learn Python in One Day.')
+            print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
+            Learn_Python = 'https://dl.magna-game.site/python/Learn%20Python%20in%20One%20Day.pdf'
+            print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (545.90 KB)')
+            def PythoninOne():
+                try:
+                    urllib.request.urlretrieve(Learn_Python, 'Learn Python in One Day (PyLe).pdf')
+                    print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
+                    sleep(1.0)
+                    system('clear')
+                    For_beginners()
+
+                except:
+                    print(Fore.LIGHTRED_EX + 'No Internet !')
+                    print(Fore.LIGHTGREEN_EX + 'Trying...')
+                    sleep(3.0)
+                    PythoninOne()
+            PythoninOne()
+
+        elif books == 2:
+            print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Python Programming for Beginners.')
+            print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
+            Python_Programming = 'https://dl.magna-game.site/python/Python%20Programming%20for%20Beginners.pdf'
+            print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (9.89 MB)')
+            def Python_Programming():
+                try:
+                    urllib.request.urlretrieve(Python_Programming, 'Python Programming for Beginners (PyLe).pdf')
+                    print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
+                    sleep(1.0)
+                    system('clear')
+                    For_beginners()
+
+                except:
+                    print(Fore.LIGHTRED_EX + 'No Internet !')
+                    print(Fore.LIGHTGREEN_EX + '[#] Trying...')
+                    sleep(3.0)
+                    Python_Programming()
+            Python_Programming()
+        
+        elif books == 3:
+            print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + " You Choose PYTHON : PYTHON'S COMPANION.")
+            print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
+            PYTHON = "https://dl.magna-game.site/python/PYTHON'S%20COMPANION.pdf"
+            print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (10.78 MB)')
+            def PYTHONSCOMPANION():
+                try:
+                    urllib.request.urlretrieve(PYTHON, "PYTHONS COMPANION (PyLe).pdf")
+                    print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
+                    sleep(1.0)
+                    system('clear')
+                    For_beginners()
+
+                except:
+                    print(Fore.LIGHTRED_EX + 'No Internet !')
+                    print(Fore.LIGHTGREEN_EX + '[#] Trying...')
+                    sleep(3.0)
+                    PYTHONSCOMPANION()
+            PYTHONSCOMPANION()
+            
+
+        elif books == 4:
+            print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Black hat Python.')
+            print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
+            Black_hat = "https://dl.magna-game.site/python/Black%20hat%20Python.pdf"
+            print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (10.03 MB)')
+            def Blackhat():
+                try:
+                    urllib.request.urlretrieve(Black_hat, "Black hat Python (PyLe).pdf")
+                    print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
+                    sleep(1.0)
+                    system('clear')
+                    For_beginners()
+
+                except:
+                    print(Fore.LIGHTRED_EX + 'No Internet !')
+                    print(Fore.LIGHTGREEN_EX + '[#] Trying...')
+                    sleep(3.0)
+                    Blackhat()
+            Blackhat()
+            
+
+        elif books == 5:
+            print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Mastering Machine Learning with Python in Six Steps.')
+            print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
+            MasteringMachine = "https://dl.magna-game.site/python/Mastering%20Machine%20Learning%20with%20Python%20in%20Six%20Steps.pdf"
+            print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (9.60 MB)')
+            def MasteringMachine():
+                try:
+                    urllib.request.urlretrieve(MasteringMachine, "Mastering Machine Learning with Python in Six Steps (PyLe).pdf")
+                    print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
+                    sleep(1.0)
+                    system('clear')
+                    For_beginners()
+
+                except:
+                    print(Fore.LIGHTRED_EX + 'No Internet !')
+                    print(Fore.LIGHTGREEN_EX + '[#] Trying...')
+                    sleep(3.0)
+                    MasteringMachine()
+            MasteringMachine()
+            
+        
+        elif books == 6:
+            print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Automate the boring stuff with python.')
+            print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
+            Automate_the_boring = "https://dl.magna-game.site/python/automate%20the%20boring%20stuff%20with%20python.pdf"
+            print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (10.7 MB)')
+            def Automate():
+                try:
+                    urllib.request.urlretrieve(Automate_the_boring, "Automate the boring stuff with python (PyLe).pdf")
+                    print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
+                    sleep(1.0)
+                    system('clear')
+                    For_beginners()
+
+                except:
+                    print(Fore.LIGHTRED_EX + 'No Internet !')
+                    print(Fore.LIGHTGREEN_EX + '[#] Trying...')
+                    sleep(3.0)
+                    Automate()
+            Automate()
+            
+        elif books == 99:
+            system('clear')
+            start()
+
+        elif books == 0:
+            print(Fore.YELLOW+'[-]──# Se You Later :)')
+
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+
+    elif for_beginners == 1000:
+        system('clear')
+        contact()
+        again_1()
+
+    elif for_beginners == 100:
+        system('clear')
+        update()
+
+    elif for_beginners == 99:
+        system('clear')
+        start()
+
+    elif for_beginners == 0:
+        print(Fore.YELLOW+'[-]──# Se You Later :)')
+
+    else:
+        print(Fore.RED + '[!] Wrong Value')
+        again_1()
+        
+
+
+
 #Update
 def update():
-    print(Fore.RED + '[#]' + Fore.WHITE + ' This is 1.1 version')
+    print(Fore.RED + '[#]' + Fore.WHITE + ' This is 1.0 version')
     print(Fore.YELLOW + '[?]' + Fore.GREEN+ ' Do you wanna download last version From github? (Y/N)')
     version_pyle = input(Fore.YELLOW +'PyLe ~$ ')
     if version_pyle.upper() == 'Y':
@@ -1573,12 +1775,11 @@ def contact():
     system('clear')
     print(Fore.LIGHTYELLOW_EX +'''
  ____________________________________________                                       
-|   # I'm AnonCODER                          |
-|     # Or NoobsFather                       |       
+|   # I'm AnonCODER                          |                         
 |       # My real name is Hesam              |         
 | # if you have any idea for this appliction |
 |        # or you wanna talk to me           |
-|       # Contact Me : @NoobsFather          |
+|       # Contact Me : @AnonC0DER            |
 |      # Email : AnonCODER@tutanota.com      |
 |____________________________________________|
 ''')
@@ -1600,7 +1801,7 @@ def start():
 ▐░▌               ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
  ▀                 ▀       ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
  -------------
-| Version 1.1 |
+| Version 1.5 |
  -------------
 ''')
 
@@ -1611,15 +1812,17 @@ def start():
 
     print (Fore.LIGHTYELLOW_EX+'''
 {-------------}
-[1] > Colors
-[2] > Machine Learning
-[3] > Telegram Robots
-[4] > Game Development
-[5] > File & Text Encryption
-[6] > Python SQL Libraries
+<Libraries>:
+    [1] > Colors
+    [2] > Machine Learning
+    [3] > Telegram Robots
+    [4] > Game Development
+    [5] > File & Text Encryption
+    [6] > Python SQL Libraries
 
-[1000] About Author && Contact Author
-[100] Update
+[10] ~> For beginner
+[100] ~> Update
+[1000] ~ > About Author && Contact Author
 [0] Exit
 {-------------}''')
 
@@ -1649,6 +1852,10 @@ def start():
         elif pyle_start == 6:
             system('clear')
             sql_lib()
+
+        elif pyle_start == 10:
+            system('clear')
+            For_beginners()
 
         elif pyle_start == 1000:
             system('clear')
