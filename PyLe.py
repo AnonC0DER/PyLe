@@ -1755,7 +1755,7 @@ More Option Coming !
 
 #Update
 def update():
-    print(Fore.RED + '[#]' + Fore.WHITE + ' This is 1.0 version')
+    print(Fore.RED + '[#]' + Fore.WHITE + ' This is 1.5 version')
     print(Fore.YELLOW + '[?]' + Fore.GREEN+ ' Do you wanna download last version From github? (Y/N)')
     version_pyle = input(Fore.YELLOW +'PyLe ~$ ')
     if version_pyle.upper() == 'Y':
