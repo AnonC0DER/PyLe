@@ -1,7 +1,7 @@
 ### New Update 1.6 !
-Shorter Code :)
-What is python Menu Added !
-For beginners Menu Edited !
+- Shorter Code :)
+- What is python Menu Added !
+- For beginners Menu Edited !
 
 # PyLe
 'Learn and introduce Python libraries with PyLe'
