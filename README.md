@@ -1,5 +1,7 @@
-### New Update 1.5 !
-For beginners Menu Add !
+### New Update 1.6 !
+Shorter Code :)
+What is python Menu Added !
+For beginners Menu Edited !
 
 # PyLe
 'Learn and introduce Python libraries with PyLe'
@@ -17,7 +19,7 @@ So, If you like PyLe idea help me improve it :)
 Easy installation :
 git clone https://github.com/AnonC0DER/PyLe.git
 
-### Version 1.5
+### Version 1.6
 
 ### What's meaning of PyLe?
 PyLe > Python Learning
