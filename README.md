@@ -1,7 +1,6 @@
-### New Update 1.6 !
-- Shorter Code :)
-- What is python Menu Added !
-- For beginners Menu Edited !
+### New Update 2.0 !
+- Apps section Added !
+- Bug Fixes
 
 # PyLe
 'Learn and introduce Python libraries with PyLe'
@@ -75,6 +74,8 @@ PyLe > Python Learning
 
 ### For Beginners :
 1. => Books
+2. => What Is Python ?
+3. Apps
 
 ### Donation for PyLe Website : 
 15v1b5gsjMKkvVLRWjCxb8pzFvXjyWQBQ8
