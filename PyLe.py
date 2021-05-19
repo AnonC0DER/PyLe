@@ -1,5 +1,5 @@
 # <------CoDed By AnonCODER------>
-# <------First Version : v1.6----->
+# <------First Version : v2.0----->
 # <------Help me improve it :)------>
 
 #imports
@@ -26,12 +26,6 @@ def again_1():
     else:
         print(Fore.RED+'Wrong Value !')
         again_1()
-
-
-#Colors menu
-def colors_menu():
-    pass
-
 
 #colors class
 class colors:
@@ -1307,10 +1301,10 @@ def wip():
 .  [2] Who wrote Python?                          .
 .  [3] Programming examples                       .
 .                                                 .
-.                                                 .
+.  [99] ~> Main Menu                              .
 .  [100] ~> Update                                .
 .  [1000] ~ > About Author && Contact Author      .
-.  [0] Exit                                       .  
+.  [0] ~> Exit                                       .  
 ...................................................''')
 
     whs_python = int(input(Fore.YELLOW + 'PyLe ~$ '))
@@ -1347,6 +1341,10 @@ def wip():
     elif whs_python == 100:
         system('clear')
         update()
+    
+    elif whs_python == 99:
+        system('clear')
+        start()
 
     elif whs_python == 0:
         print(Fore.YELLOW+'[-]──# Se You Later :)')
@@ -1356,9 +1354,314 @@ def wip():
         again_1()  
 
 
+#Apps
+def apps():
+    print(random_color [0] + '''
+         _                   _          _          _         
+        / /\                /\ \       /\ \       / /\       
+       / /  \              /  \ \     /  \ \     / /  \      
+      / / /\ \            / /\ \ \   / /\ \ \   / / /\ \__   
+     / / /\ \ \          / / /\ \_\ / / /\ \_\ / / /\ \___\  
+    / / /  \ \ \        / / /_/ / // / /_/ / / \ \ \ \/___/  
+   / / /___/ /\ \      / / /__\/ // / /__\/ /   \ \ \        
+  / / /_____/ /\ \    / / /_____// / /_____/_    \ \ \       
+ / /_________/\ \ \  / / /      / / /      /_/\__/ / /       
+/ / /_       __\ \_\/ / /      / / /       \ \/___/ /        
+\_\___\     /____/_/\/_/       \/_/         \_____\/                                                                
+    ''')
+    print (Fore.YELLOW + '[#]' + Fore.LIGHTMAGENTA_EX + ' Here I have prepared a list of software you may needed to start Python programming')
+    print (Fore.RED + '[#]' + Fore.LIGHTCYAN_EX+ " Now Choose Your apps...")
+    print (Fore.LIGHTYELLOW_EX+'''
+===============================================
+| (1) ~> Python Version +3                    |
+| (2) ~> Python Version +2                    |
+| (3) ~> Cmder                                |
+| (4) ~> Atom                                 |
+| (5) ~> NotePad ++                           |
+| (6) ~> Sublime                              |
+|                                             |
+| <99> ~> Main Menu                           |
+| <100> ~> Update                             |
+| <1000> ~> About Author && Contact Author    |
+| <0> ~> Exit                                 |
+===============================================
+''')
+    
+    apps_var = int(input(Fore.YELLOW + 'PyLe ~$ '))
+    # download Python 3
+    if apps_var == 1:
+        system('clear')
+        print(Fore.LIGHTYELLOW_EX + '[#]' + Fore.LIGHTMAGENTA_EX + 'Windows,Unix|Linux,Mac (W/U/M)')
+        print()
+        py3 = input(Fore.YELLOW + 'PyLe ~$ ')
+        if py3.upper() == 'W':
+            print(Fore.LIGHTBLUE_EX + 'Which one ? 32bit, 64bit (32/64)')
+            py3WV = int(input(Fore.YELLOW + 'PyLe ~$ '))
+            if py3WV == 64:
+                print(Fore.LIGHTGREEN_EX + 'Wait friend, Downloading... (64bit)')
+                try:
+                    urllib.request.urlretrieve('https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe', 'python-3.9.5-amd64.exe')
+                    print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                    sleep(1.0)
+                    system('clear')
+                    apps()
+                except:
+                    print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                    again_1()
+            elif py3WV == 32:
+                print(Fore.LIGHTGREEN_EX + 'Wait friend, Downloading... (32bit)')
+                try:
+                    urllib.request.urlretrieve('https://www.python.org/ftp/python/3.9.5/python-3.9.5.exe', 'python-3.9.5.exe')
+                    print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                    sleep(1.0)
+                    system('clear')
+                    apps()
+                except:
+                    print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                    again_1()
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                again_1()
+        elif py3.upper() == 'U':
+            print(Fore.LIGHTGREEN_EX + 'Wait friend, Downloading... (Unix/Linux Ver)')
+            try:
+                urllib.request.urlretrieve('https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tgz', 'Python-3.9.5.tgz')
+                print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                apps()
+            except:
+                print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                again_1()
+        elif py3.upper() == 'M':
+            print(Fore.LIGHTBLUE_EX + 'Which one ? for macOS 10.9 and later, for macOS 10.9 and later, including macOS 11 Big Sur on Apple Silicon (10/11)')
+            py3M = int(input(Fore.YELLOW + 'PyLe ~$ '))
+            if py3M == 10:
+                print(Fore.LIGHTGREEN_EX + 'Wait friend, Downloading... (10.9 and later)')
+                try:
+                    urllib.request.urlretrieve('https://www.python.org/ftp/python/3.9.5/python-3.9.5-macosx10.9.pkg', 'python-3.9.5-macosx10.9.pkg')
+                    print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                    sleep(1.0)
+                    system('clear')
+                    apps()
+                except:
+                    print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                    again_1()
+            elif py3M == 11:
+                print(Fore.LIGHTGREEN_EX + 'Wait friend, Downloading... (Including macOS 11)')
+                try:
+                    urllib.request.urlretrieve('https://www.python.org/ftp/python/3.9.5/python-3.9.5-macos11.pkg', 'python-3.9.5-macos11.pkg')
+                    print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                    sleep(1.0)
+                    system('clear')
+                    apps()
+                except:
+                    print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                    again_1()
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                again_1()
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    # download Python 2
+    elif apps_var == 2:
+        system('clear')
+        print(Fore.LIGHTYELLOW_EX + '[#]' + Fore.LIGHTMAGENTA_EX + 'Python 2.7 / Windows,Unix|Linux,Mac (W/U/M)')
+        print()
+        py2 = input(Fore.YELLOW + 'PyLe ~$ ')
+        if py2.upper() == 'W':
+            print(Fore.LIGHTBLUE_EX + 'Which one ? 32bit, 64bit (32/64)')
+            py2WV = int(input(Fore.YELLOW + 'PyLe ~$ '))
+            if py2WV == 64:
+                print(Fore.LIGHTGREEN_EX + 'Wait friend, Downloading... (2.7.18 / 64bit)')
+                try:
+                    urllib.request.urlretrieve('https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64.msi', 'python-2.7.18.amd64.msi')
+                    print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                    sleep(1.0)
+                    system('clear')
+                    apps()
+                except:
+                    print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                    again_1()
+            elif py2WV == 32:
+                print(Fore.LIGHTGREEN_EX + 'Wait friend, Downloading... (2.7.18 / 32bit)')
+                try:
+                    urllib.request.urlretrieve('https://www.python.org/ftp/python/2.7.18/python-2.7.18.msi', 'python-2.7.18.msi')
+                    print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                    sleep(1.0)
+                    system('clear')
+                    apps()
+                except:
+                    print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                    again_1()
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                again_1()
+        
+        elif py2.upper() == 'U':
+            print(Fore.LIGHTGREEN_EX + 'Wait friend, Downloading... (2.7.18v / Unix/Linux)')
+            try:
+                urllib.request.urlretrieve('https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz', 'Python-2.7.18.tgz')
+                print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                apps()
+            except:
+                print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                again_1()
+        
+        elif py2.upper() == 'M':
+            print(Fore.LIGHTGREEN_EX + 'Wait friend, Downloading... (2.7.18 / Mac OS X 10.9)')
+            try:
+                urllib.request.urlretrieve('https://www.python.org/ftp/python/2.7.18/python-2.7.18-macosx10.9.pkg', 'python-2.7.18-macosx10.9.pkg')
+                print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                apps()
+            except:
+                    print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                    again_1()
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    # download cmder
+    elif apps_var == 3:
+        print()
+        print(Fore.LIGHTCYAN_EX + 'Great, Downloading...')
+        try:
+            urllib.request.urlretrieve('https://github.com/cmderdev/cmder/releases/download/v1.3.18/cmder.7z', 'Cmder.7z')
+            print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+            sleep(1.0)
+            system('clear')
+            apps()
+        except:
+            print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+            again_1()
+
+    elif apps_var == 4:
+        system('clear')
+        print(Fore.LIGHTBLUE_EX + 'Which one ? 32bit, 64bit (32/64)')
+        atom = int(input(Fore.YELLOW + 'PyLe ~$ '))
+        if atom == 64:
+            try:
+                print(Fore.LIGHTYELLOW_EX + 'Ok, Downloading... (Atom LastVer 64bit)')
+                urllib.request.urlretrieve('https://github.com/atom/atom/releases/download/v1.57.0/AtomSetup-x64.exe', 'AtomSetup-x64.exe')
+                print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                apps()
+            except:
+                print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                again_1()
+
+        elif atom == 32:
+            try:
+                print(Fore.LIGHTYELLOW_EX + 'Ok, Downloading... (Atom LastVer 32bit)')
+                urllib.request.urlretrieve('https://github.com/atom/atom/releases/download/v1.57.0/AtomSetup.exe', 'AtomSetup.exe')
+                print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                apps()
+            except:
+                print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                again_1()
+
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    # download Notpad ++
+    elif apps_var == 5:
+        system('clear')
+        print(Fore.LIGHTBLUE_EX + 'Which one ? 32bit, 64bit (32/64)')
+        notepad = int(input(Fore.YELLOW + 'PyLe ~$ '))
+        if notepad == 64:
+            print(Fore.LIGHTYELLOW_EX + 'Ok, Downloading... (NotePad ++ LastVer 64bit)')
+            try:
+                urllib.request.urlretrieve('https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.9.5/npp.7.9.5.Installer.x64.exe', 'npp.7.9.5.Installer.x64.exe')
+                print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                apps()
+            except:
+                print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                apps()
+
+        elif notepad == 32:
+            print(Fore.LIGHTYELLOW_EX + 'Ok, Downloading... (NotePad ++ LastVer 32bit)')
+            try:
+                urllib.request.urlretrieve('https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.9.5/npp.7.9.5.Installer.exe', 'npp.7.9.5.Installer.exe')
+                print(Fore.LIGHTMAGENTA_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                apps()
+            except:
+                print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    # Download Sublime
+    elif apps_var == 6:
+        system('clear')
+        print(Fore.LIGHTBLUE_EX + 'Which one ? 32bit, 64bit (32/64)')
+        sublime = int(input(Fore.YELLOW + 'PyLe ~$ '))
+        if sublime == 64:
+            print(Fore.LIGHTYELLOW_EX + 'Ok, Downloading... (Sublime 3.2 64bit)')
+            try:
+                urllib.request.urlretrieve('https://pyle-pythonlearning.ir/downloads/apps/Sublime%20Text%20Build%203211%20x64%20Setup.exe', 'Setup64x.exe')
+                print(Fore.LIGHTMAGENTA_EX + '[!] Done !')
+                sleep(1.0)
+                system('clear')
+                apps()
+            except:
+                print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                again_1()
+        elif sublime == 32:
+            print(Fore.LIGHTYELLOW_EX + 'Ok, Downloading... (Sublime 3.2 32bit)')
+            try:
+                urllib.request.urlretrieve('https://pyle-pythonlearning.ir/downloads/apps/Sublime%20Text%20Build%203211%20Setup.exe', 'Setup.exe')
+                print(Fore.LIGHTMAGENTA_EX + '[!] Done !')
+                sleep(1.0)
+                system('clear')
+                apps()
+            except:
+                print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+                again_1()
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+            
+    ##########
+    elif apps_var == 99:
+        system('clear')
+        start()            
+
+    elif apps_var == 100:
+        system('clear')
+        update()
+
+    elif apps_var == 1000:
+        system('clear')
+        contact()
+        again_1()
+    
+    elif apps_var == 0:
+        print(Fore.YELLOW+'[-]──# Se You Later :)')
+    
+    else:
+        print(Fore.RED + '[!] Wrong Value')
+        again_1()
+    
+
 #Update
 def update():
-    print(Fore.RED + '[#]' + Fore.WHITE + ' This is 1.6 version')
+    print(Fore.RED + '[#]' + Fore.WHITE + ' This is 2.0 version')
     print(Fore.YELLOW + '[?]' + Fore.GREEN+ ' Do you wanna download last version From github? (Y/N)')
     version_pyle = input(Fore.YELLOW +'PyLe ~$ ')
     if version_pyle.upper() == 'Y':
@@ -1404,7 +1707,7 @@ def start():
 ▐░▌               ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
  ▀                 ▀       ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
  -------------
-| Version 1.6 |
+| Version 2.0 |
  -------------
 ''')
 
@@ -1426,6 +1729,8 @@ def start():
 { <Biginners>:                                    }
 {        [10] ~> For beginner                     }
 {        [99] ~> What Is Python ?                 }    
+{        [999] ~> Apps                            }
+{                                                 }
 {                                                 }      
 { [100] ~> Update                                 }  
 { [1000] ~ > About Author && Contact Author       }
@@ -1476,6 +1781,10 @@ def start():
             system('clear')
             wip()
 
+        elif pyle_start == 999:
+            system('clear')
+            apps()
+
         elif pyle_start == 0:
             print(Fore.YELLOW+'[-]──# Se You Later :)')
 
@@ -1490,5 +1799,5 @@ def start():
 start()
 
 # <------CoDed By AnonCODER------>
-# <------First Version : v1.6------>
+# <------First Version : v2.0------>
 # <------Help me improve it :)------>
