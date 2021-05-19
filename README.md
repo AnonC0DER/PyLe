@@ -16,7 +16,10 @@ So, If you like PyLe idea help me improve it :)
 
 ### Installation :
 Easy installation :
-git clone https://github.com/AnonC0DER/PyLe.git
+- Linux :
+- git clone https://github.com/AnonC0DER/PyLe.git
+- Windows:
+- Use Cmder application (You can download it in PyLe)
 
 ### Version 2.0
 
