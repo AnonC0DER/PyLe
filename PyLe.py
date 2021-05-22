@@ -691,7 +691,7 @@ U /"___|uU  /"\  uU|' \/ '|u\| ___"|/     |  _"\ \| ___"|/\ \   /"/u
             print('')
             print(Fore.YELLOW + '<---Example--->')
             print(Fore.CYAN + 'More Details : https://michael0x2a.com/blog/turtle-examples')
-            print(Fore.WHITE + json.loads( data )['game_devel']['PyOpenGL_dec'])
+            print(Fore.WHITE + json.loads( data )['game_devel']['turtles_exm'])
             print('')
             print(Fore.YELLOW + '<---Example--->')
             print('')
