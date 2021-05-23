@@ -1,3 +1,5 @@
+![alt text](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLe.png)
+
 ### Bete Version Of PyLe-GUI is Ready !
 ## Use PyQt5 and pyinstaller for exe file.
 Now You Can Use PyLe-GUI.
@@ -11,8 +13,11 @@ If there is any bug, Let me know.
 
 ## Download Python Source :
 - https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI-PythonSource.zip
+- https://github.com/AnonC0DER/PyLe/raw/main/PyLeGUI/PyLeGUI-PythonSource.zip
+
 # Requirements for python source :
 - PyQt5 (pip install PyQt5)
+
 
 ### All ideas :
 - [x] Use Json data for shorter code
