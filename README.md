@@ -84,7 +84,7 @@ PyLe > Python Learning
 15v1b5gsjMKkvVLRWjCxb8pzFvXjyWQBQ8
 
 ### Screenshot : 
-![ScreenShot](PyLe.jpg)
+![ScreenShot](img/PyLe.jpg)
 
 Contact me : 
 AnonCODER@tutanota.com
