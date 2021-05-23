@@ -1,3 +1,24 @@
+### Bete Version Of PyLe-GUI is Ready !
+## Use PyQt5 and pyinstaller for exe file.
+Now You Can Use PyLe-GUI.
+This is the first version of PyLe-GUI So, new updates are comming... :)
+Please Send me your ideas for PyLe project.
+If there is any bug, Let me know.
+> (Tested On Windows 7,10 64bit) 
+
+## Download Exe File :
+- https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI.rar
+
+## Download Python Source :
+- https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI-PythonSource.zip
+# Requirements for python source :
+- PyQt5 (pip install PyQt5)
+
+### All ideas :
+- [x] Use Json data for shorter code
+- [x] GUI Version
+- [ ] Make it optimal
+
 ### New Update 2.0 !
 - Apps section Added !
 - Bug Fixes
