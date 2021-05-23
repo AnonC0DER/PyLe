@@ -1,5 +1,7 @@
 ![alt text](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLe.png)
 
+[Python](https://www.python.org/)
+[WebSite(Comming soon)](https://pyle-pythonlearning.ir/)
 ### Bete Version Of PyLe-GUI is Ready !
 ## Use PyQt5 and pyinstaller for exe file.
 Now You Can Use PyLe-GUI.
