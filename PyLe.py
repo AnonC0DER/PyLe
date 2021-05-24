@@ -1,5 +1,5 @@
 # <------CoDed By AnonCODER------>
-# <------First Version : v2.0----->
+# <------First Version : v2.1----->
 # <------Help me improve it :)------>
 
 #imports
@@ -1659,9 +1659,53 @@ def apps():
         again_1()
     
 
+# GUI Ver
+def gui_ver():
+    print(Fore.LIGHTCYAN_EX + '~> Well, You should know this is Beta GUI Version.')
+    print(Fore.LIGHTGREEN_EX + '~> So, If there is any bug, please Let me know about it.')
+    print(Fore.LIGHTYELLOW_EX + '~> Now Choose, Download Exe File, Download Python Source or Both. (E/P/B)')
+    print()
+    gui_pyle = input(Fore.YELLOW + 'PyLe ~$ ')
+    if gui_pyle.upper() == 'E':
+        print(Fore.LIGHTMAGENTA_EX + '~> Ok, Downloading please Wait... (Exe File)')
+        try:
+            urllib.request.urlretrieve('https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI.rar', 'PyLeGUI.rar')
+            print(Fore.LIGHTBLUE_EX + 'Done !')
+            again_1()
+        except:
+            print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+            sleep(1)
+            again_1()
+    elif gui_pyle.upper() == 'P':
+        print(Fore.LIGHTMAGENTA_EX + '~> Ok, Downloading please Wait... (Python Source)')
+        try:
+            urllib.request.urlretrieve('https://github.com/AnonC0DER/PyLe/raw/main/PyLeGUI/PyLeGUI-PythonSource.zip', 'PyLeGUI-PythonSource.zip')
+            print(Fore.LIGHTBLUE_EX + 'Done !')
+            again_1()
+        except:
+            print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+            sleep(1)
+            again_1()
+    elif gui_pyle.upper() == 'B':
+        print(Fore.LIGHTMAGENTA_EX + '~> Ok, Downloading please Wait... (Exe File)')
+        try:
+            urllib.request.urlretrieve('https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI.rar', 'PyLeGUI.rar')
+            print(Fore.LIGHTBLUE_EX + 'Exe File Downloaded, wait for Python Source...')
+            urllib.request.urlretrieve('https://github.com/AnonC0DER/PyLe/raw/main/PyLeGUI/PyLeGUI-PythonSource.zip', 'PyLeGUI-PythonSource.zip')
+            print(Fore.LIGHTGREEN_EX + 'Download Completed !')
+            again_1()
+        except:
+            print(Fore.LIGHTRED_EX + '[!] Connection Lost')
+            sleep(1)
+            again_1()
+    else:
+        print(Fore.RED + '[!] Wrong Value')
+        again_1()
+
+
 #Update
 def update():
-    print(Fore.RED + '[#]' + Fore.WHITE + ' This is 2.0 version')
+    print(Fore.RED + '[#]' + Fore.WHITE + ' This is 2.1 version')
     print(Fore.YELLOW + '[?]' + Fore.GREEN+ ' Do you wanna download last version From github? (Y/N)')
     version_pyle = input(Fore.YELLOW +'PyLe ~$ ')
     if version_pyle.upper() == 'Y':
@@ -1707,7 +1751,7 @@ def start():
 ▐░▌               ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
  ▀                 ▀       ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
  -------------
-| Version 2.0 |
+| Version 2.1 |
  -------------
 ''')
 
@@ -1731,7 +1775,8 @@ def start():
 {        [99] ~> What Is Python ?                 }    
 {        [999] ~> Apps                            }
 {                                                 }
-{                                                 }      
+{                                                 }
+{ [20] ~> GUI Version Of PyLe                     }                                                   
 { [100] ~> Update                                 }  
 { [1000] ~ > About Author && Contact Author       }
 { [0] Exit                                        }
@@ -1767,6 +1812,10 @@ def start():
         elif pyle_start == 10:
             system('clear')
             For_beginners()
+        
+        elif pyle_start == 20:
+            system('clear')
+            gui_ver()
 
         elif pyle_start == 1000:
             system('clear')
@@ -1799,5 +1848,5 @@ def start():
 start()
 
 # <------CoDed By AnonCODER------>
-# <------First Version : v2.0------>
+# <------First Version : v2.1------>
 # <------Help me improve it :)------>
