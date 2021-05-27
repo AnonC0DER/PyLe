@@ -1753,6 +1753,9 @@ def start():
  -------------
 | Version 2.1 |
  -------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+| PyLe-PythonLearning.ir |
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 ''')
 
     print (Fore.YELLOW + '[$]' + Fore.LIGHTCYAN_EX+ ' Learn Python Libraries by Python script.')
