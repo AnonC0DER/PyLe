@@ -30,7 +30,7 @@ If there is any bug, Let me know.
 - [x] PyLe WebSite
 - [ ] Make it optimal
 
-### New Update 2.0 !
+### New Update 2.1 !
 - Apps section Added !
 - Bug Fixes
 
@@ -53,7 +53,7 @@ Easy installation :
 - Windows:
 - Use Cmder application (You can download it in PyLe)
 
-### Version 2.0
+### Version 2.1
 
 ### What's meaning of PyLe?
 PyLe > Python Learning
