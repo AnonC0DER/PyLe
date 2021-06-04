@@ -28,7 +28,7 @@ If there is any bug, Let me know.
 - [x] Use Json data for shorter code
 - [x] GUI Version
 - [x] PyLe WebSite
-- [ ] Make it optimal
+- [ ] Object-oriented programming
 
 ### New Update 2.1 !
 - Apps section Added !
