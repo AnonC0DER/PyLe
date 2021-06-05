@@ -1,5 +1,9 @@
 ![alt text](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLe.png)
 
+# if You wanna know about next update, please join PyLe's Telegram Channel.
+- https://t.me/PyLe_PythonLearning
+
+
 # The First Version Of PyLe Website is Ready !
 ## Please support it with share it.
 ### https://pyle-pythonlearning.ir
