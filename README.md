@@ -1,6 +1,6 @@
 ![alt text](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLe.png)
 
-# if You wanna know about next update, please join PyLe's Telegram Channel.
+## if You wanna know about next update, please join PyLe's Telegram Channel.
 - https://t.me/PyLe_PythonLearning
 
 
