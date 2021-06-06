@@ -1,5 +1,16 @@
 ![alt text](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLe.png)
 
+
+# New Update 2.5 !
+- Use Object oriented programming
+- 25 New Libraries !
+- 6 new libraries added to Machine Learning Section
+- 19 libraries in new section called Other, for other python libraries
+- Bugs fixed
+
+
+
+
 ## if You wanna know about next updates, please join PyLe's Telegram Channel.
 - https://t.me/PyLe_PythonLearning
 
@@ -32,11 +43,8 @@ If there is any bug, Let me know.
 - [x] Use Json data for shorter code
 - [x] GUI Version
 - [x] PyLe WebSite
-- [ ] Object-oriented programming
-
-### New Update 2.1 !
-- Apps section Added !
-- Bug Fixes
+- [X] Object-oriented programming
+- [ ] A kind of Surprise :)
 
 # PyLe
 'Learn and introduce Python libraries with PyLe'
@@ -57,7 +65,7 @@ Easy installation :
 - Windows:
 - Use Cmder application (You can download it in PyLe)
 
-### Version 2.1
+### Version 2.5
 
 ### What's meaning of PyLe?
 PyLe > Python Learning
@@ -68,13 +76,21 @@ PyLe > Python Learning
 
 ### Main Menu :
 
+## Libraries :
 1. Colors (Color output in Python)
 2. Machine Learning
 3. Telegram Robots
 4. Game Development
 5. File & Text Encryption
 6. Python SQL Libraries
+7. Other
 
+## Biginners :
+10. Books
+90. What Is Python ?
+91. Apps
+
+20. GUI Version Of PyLe
 1000. About Author
 100. Update
 0. Exit  
@@ -89,7 +105,13 @@ PyLe > Python Learning
 2. => Keras 
 3. => Xgboost
 4. => Statsmodels
-5. => Tensorflow 
+5. => Tensorflow
+6. => Numpy
+7. => SciPy
+8. => Matplotlib
+9. => Seaborn
+10. => PyTorch
+11. => PyCaret
 
 ### Telegram Robots :
 1. => Python-telegram-bot
