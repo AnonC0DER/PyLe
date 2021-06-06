@@ -1,22 +1,25 @@
 # <------CoDed By AnonCODER------>
-# <------First Version : v2.1----->
+# <------v2.5----->
 # <------Help me improve it :)------>
 
-#imports
-from os import system
-from colorama import Fore
-from time import sleep
+# imports
 import random
 import urllib.request
 import json
+# For Object-oriented programming
+from oop.other_libraries import *
+# I use this because, some libraries dosen't need installtion 
+from oop import libraries
+from os import system
+from colorama import Fore
+from time import sleep
 
-# Trying to make Shortcode
+# Trying to make Shorter Code
 fp = open('database/data.json', 'r')
 data = fp.read()
 fp.close()
 
-
-#again
+# again
 def again_1():
     again_v = input(Fore.GREEN+'For Menu type (M) for Exit type (E) : ')
     if again_v.upper() == 'M' or again_v.upper() == 'Menu' or again_v.lower() == 'm' or again_v.lower() == 'menu':
@@ -45,7 +48,6 @@ random_color = [colors.HEADER,colors.IMPORTANT,colors.NOTICE,colors.OKBLUE,color
 random.shuffle(random_color)
 
 
-
 #Colors Libraries
 def c_lib():
     print (random_color [0] + '''   
@@ -69,7 +71,7 @@ def c_lib():
     print (Fore.BLUE +'''
 {-------------}
 [1] => Colored
-[2] => Colorma
+[2] => Colorama
 [3] => Termcolor
 
 [1000] About Author && Contact Author
@@ -83,31 +85,20 @@ def c_lib():
     if colors_lib == 1:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pypi.org/project/colored/')
-        print('')
+        print()
         colord = input(Fore.YELLOW +'PyLe ~$ ')
-
+        colord_info = libraries.all_libraries('colored --upgrade', 'Colors', 'colored_dec', 'colored_exm', 'https://gitlab.com/dslackw/colored/blob/master/CHANGELOG')
+        
         if colord.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install colored --upgrade')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            colord_info.AllLibs_install()
             again_1()
 
         elif colord.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print (Fore.WHITE + json.loads( data )['Colors']['colored_dec'])
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            colord_info.AllLibs_dec()
             again_1()
 
         elif colord.upper() == 'E':
-           print('')
-           print(Fore.YELLOW + '<---Example--->')
-           print (Fore.WHITE + json.loads( data )['Colors']['colored_exm'])          
-           print(Fore.YELLOW + '<---Example--->')
-           print('')
+           colord_info.AllLibs_exm()
            again_1()
 
         else:
@@ -118,32 +109,20 @@ def c_lib():
     elif colors_lib == 2:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pypi.org/project/colorama/')
-        print('')
-        colorma = input(Fore.YELLOW +'PyLe ~$ ')
+        print()
+        colorama = input(Fore.YELLOW +'PyLe ~$ ')
+        colorama_info = libraries.all_libraries('colorama', 'Colors', 'colorama_dec', 'colorama_exm', 'https://github.com/tartley/colorama')
 
-        if colorma.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install colorama')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+        if colorama.upper() == 'I':
+            colorama_info.AllLibs_install()
             again_1()
 
-        elif colorma.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print (Fore.WHITE + json.loads( data )['Colors']['colorama_dec']) 
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+        elif colorama.upper() == 'D':
+            colorama_info.AllLibs_dec()
             again_1()
 
-        elif colorma.upper() == 'E':
-           print('')
-           print(Fore.YELLOW + '<---Example--->')
-           print (Fore.WHITE + json.loads( data )['Colors']['colorama_exm']) 
-           print('')
-           print(Fore.YELLOW + '<---Example--->')
-           print('')
+        elif colorama.upper() == 'E':
+           colorama_info.AllLibs_exm()
            again_1()
 
         else:
@@ -154,31 +133,19 @@ def c_lib():
     elif colors_lib == 3:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pypi.org/project/termcolor/')
-        print('')
+        print()
         termcolor = input(Fore.YELLOW +'PyLe ~$ ')
+        termcolor_info = libraries.all_libraries('termcolor', 'Colors', 'termcolor_dec', 'termcolor_exm', 'http://pypi.python.org/pypi/termcolor')
         if termcolor.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install termcolor')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            termcolor_info.AllLibs_install()
             again_1()
 
         elif termcolor.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print (Fore.WHITE + json.loads( data )['Colors']['termcolor_dec'])  
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            termcolor_info.AllLibs_dec()
             again_1()
 
         elif termcolor.upper() == 'E':
-           print('')
-           print(Fore.YELLOW + '<---Example--->')
-           print (Fore.WHITE + json.loads( data )['Colors']['termcolor_exm'])
-           print('')
-           print(Fore.YELLOW + '<---Example--->')
-           print('')
+           termcolor_info.AllLibs_exm()
            again_1()
 
         else:
@@ -207,7 +174,7 @@ def c_lib():
         again_1()
 
 
-#Machine Learning
+# Machine Learning & DataAnalysis
 def machine_learning():
     print (random_color [0] + '''   
    __     __)                              _                           
@@ -218,18 +185,24 @@ def machine_learning():
                                               )                  (_/                                        
 ''')                             
 
-    print (Fore.YELLOW + '[#]' + Fore.MAGENTA+ ' Welcome to the Python Machine Learning Libraries.')
+    print (Fore.YELLOW + '[#]' + Fore.MAGENTA+ ' Welcome to the Python Machine Learning & DataAnalysis Libraries.')
     print (Fore.YELLOW + '[#]' + Fore.MAGENTA+ ' You can get various information from this section')
     print (Fore.YELLOW + '[#]' + Fore.MAGENTA+ ' Such as installing libraries and descriptions about them.')
     print (Fore.GREEN + '[#]' + Fore.MAGENTA+ " Now Choose Your Library... ")
 
-    print (Fore.BLUE +'''
+    print (Fore.LIGHTBLUE_EX +'''
 {-------------}
 [1] => Scikit-learn
 [2] => Keras 
 [3] => Xgboost
 [4] => Statsmodels
-[5] => Tensorflow   
+[5] => Tensorflow
+[6] => Numpy
+[7] => SciPy
+[8] => Matplotlib
+[9] => Seaborn
+[10] => PyTorch
+[11] => PyCaret 
 
 [1000] About Author && Contact Author
 [100] Update
@@ -238,183 +211,275 @@ def machine_learning():
 {-------------}''')
 
     machine_lib = int(input(Fore.YELLOW +'PyLe ~$ '))
-
+    
+    # scikit-learn
     if machine_lib == 1:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D'.")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pypi.org/project/scikit-learn/')
-        print('')
+        print()
         scikit = input(Fore.YELLOW +'PyLe ~$ ')
         if scikit.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install scikit-learn')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            machinlearning_class.scikit_install()
             again_1()
 
         elif scikit.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print (Fore.WHITE + json.loads( data )['Machin_Learning']['scikit_dec']) 
-            print('')
-            print (Fore.RED + json.loads( data )['Machin_Learning']['scikit_req']) 
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            machinlearning_class.scikit_dec()
             again_1()
 
         else:
             print(Fore.RED + '[!] Wrong Value')
             again_1()
 
-
+    # keras
     elif machine_lib == 2:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pypi.org/project/keras/')
-        print('')
+        print()
         keras = input(Fore.YELLOW +'PyLe ~$ ')
-
+        keras_info = libraries.all_libraries('keras', 'Machin_Learning', 'keras_dec', 'keras_exm', 'https://keras.io/examples/')
+        
         if keras.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install keras')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            keras_info.AllLibs_install()
             again_1()
 
         elif keras.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print (Fore.WHITE + json.loads( data )['Machin_Learning']['keras_dec'])
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            keras_info.AllLibs_dec()
             again_1()
 
         elif keras.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://keras.io/examples/')
-            print (Fore.WHITE + json.loads( data )['Machin_Learning']['keras_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            keras_info.AllLibs_exm()
             again_1()
 
         else:
             print(Fore.RED + '[!] Wrong Value')
             again_1()
 
-    
+    # xgboost
     elif machine_lib == 3:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
         print (Fore.GREEN + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://xgboost.readthedocs.io/en/latest/tutorials/input_format.html')
-        print('')
+        print()
         xgboost = input(Fore.YELLOW +'PyLe ~$ ')
+        xgboost_info = libraries.all_libraries('xgboost', 'Machin_Learning', 'xgboost_dec', 'xgboost_exm', 'https://xgboost.readthedocs.io/en/latest/tutorials/input_format.html')
+        
         if xgboost.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install xgboost')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            xgboost_info.AllLibs_install()
             again_1()
 
         elif xgboost.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print (Fore.WHITE + json.loads( data )['Machin_Learning']['xgboost_dec'])
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            xgboost_info.AllLibs_dec()
             again_1()
 
         elif xgboost.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://xgboost.readthedocs.io/en/latest/tutorials/input_format.html')
-            print (Fore.WHITE + json.loads( data )['Machin_Learning']['xgboost_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            xgboost_info.AllLibs_exm()
             again_1()
 
         else:
             print(Fore.RED + '[!] Wrong Value')
             again_1()
 
-
+    # statsmodels
     elif machine_lib == 4:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pypi.org/project/statsmodels/')
-        print('')
+        print()
         statsmodels = input(Fore.YELLOW +'PyLe ~$ ')
+        statsmodels_info = libraries.all_libraries('statsmodels', 'Machin_Learning', 'statsmodels_dec', 'statsmodels_exm', 'https://www.statsmodels.org/stable/')
+        
         if statsmodels.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install statsmodels')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            statsmodels_info.AllLibs_install()
             again_1()
 
         elif statsmodels.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print (Fore.WHITE + json.loads( data )['Machin_Learning']['statsmodels_dec'])
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            statsmodels_info.AllLibs_dec()
             again_1()
 
         elif statsmodels.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://www.statsmodels.org/stable/' + Fore.GREEN + ' &  https://datatofish.com/statsmodels-linear-regression/')
-            print (Fore.WHITE + json.loads( data )['Machin_Learning']['statsmodels_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            statsmodels_info.AllLibs_exm()
             again_1()
 
         else:
             print(Fore.RED + '[!] Wrong Value')
             again_1()
 
-
+    # Tensorflow
     elif machine_lib == 5:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://www.tensorflow.org/tutorials')
-        print('')
+        print()
         tensorflow = input(Fore.YELLOW +'PyLe ~$ ')
+        tensorflow_info = libraries.all_libraries('tensorflow', 'Machin_Learning', 'tensorflow_dec', 'tensorflow_exm', 'https://rubikscode.net/2018/02/05/introduction-to-tensorflow-with-python-example/')
+        
         if tensorflow.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install tensorflow')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            tensorflow_info.AllLibs_install()
             again_1()
 
         elif tensorflow.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print (Fore.WHITE + json.loads( data )['Machin_Learning']['tensorflow_dec'])
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            tensorflow_info.AllLibs_dec()
             again_1()
 
         elif tensorflow.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://rubikscode.net/2018/02/05/introduction-to-tensorflow-with-python-example/')
-            print (Fore.WHITE + json.loads( data )['Machin_Learning']['tensorflow_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            tensorflow_info.AllLibs_exm()
+            again_1()
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+
+    # Numpy
+    elif machine_lib == 6:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://numpy.org/doc/stable/user/whatisnumpy.html')
+        print()
+        numpy = input(Fore.YELLOW +'PyLe ~$ ')
+        numpy_info = libraries.all_libraries('numpy', 'Machin_Learning', 'numpy_dec', 'numpy_exm', 'https://numpy.org/doc/stable/user/quickstart.html')
+        
+        if numpy.upper() == 'I':
+            numpy_info.AllLibs_install()
+            again_1()
+
+        elif numpy.upper() == 'D':
+            numpy_info.AllLibs_dec()
+            again_1()
+        
+        elif numpy.upper() == 'E':
+            numpy_info.AllLibs_exm()
+            again_1()
+
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    
+    # SciPy
+    elif machine_lib == 7:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.scipy.org/doc/scipy/reference/tutorial/general.html')
+        print()
+        SciPy = input(Fore.YELLOW + 'PyLe ~$ ')
+        SciPy_info = libraries.all_libraries('scipy', 'Machin_Learning', 'SciPy_dec', 'SciPy_exm', 'https://docs.scipy.org/doc/scipy/reference/tutorial/index.html')
+        
+        if SciPy.upper() == 'I':
+            SciPy_info.AllLibs_install()
+            again_1()
+        
+        elif SciPy.upper() == 'D':
+            SciPy_info.AllLibs_dec()
+            again_1()
+        
+        elif SciPy.upper() == 'E':
+            SciPy_info.AllLibs_exm()
             again_1()
 
         else:
             print(Fore.RED + '[!] Wrong Value')
             again_1()
 
+    # Matplotlib
+    elif machine_lib == 8:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://matplotlib.org/stable/contents.html')
+        print()
+        Matplotlib = input(Fore.YELLOW +'PyLe ~$ ')
+        Matplotlib_info = libraries.all_libraries('matplotlib', 'Machin_Learning', 'Matplotlib_dec', 'Matplotlib_exm', 'https://matplotlib.org/stable/gallery/index.html')
+        
+        if Matplotlib.upper() == 'I':
+            Matplotlib_info.AllLibs_install()
+            again_1()
+        
+        elif Matplotlib.upper() == 'D':
+            Matplotlib_info.AllLibs_dec()
+            again_1()
+        
+        elif Matplotlib.upper() == 'E':
+            Matplotlib_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+        
+    # Seaborn
+    elif machine_lib == 9:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://seaborn.pydata.org/introduction.html')
+        print()
+        Seaborn = input(Fore.YELLOW + 'PyLe ~$ ')
+        Seaborn_info = libraries.all_libraries('seaborn', 'Machin_Learning', 'seaborn_dec', 'seaborn_exm', 'https://seaborn.pydata.org/examples/index.html')
+        
+        if Seaborn.upper() == 'I':
+            Seaborn_info.AllLibs_install()
+            again_1()
+        
+        elif Seaborn.upper() == 'D':
+            Seaborn_info.AllLibs_dec()
+            again_1()
+        
+        elif Seaborn.upper() == 'E':
+            Seaborn_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    
+    # PyTorch
+    elif machine_lib == 10:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pytorch.org/get-started/locally/')
+        print()
+        PyTorch = input(Fore.YELLOW +'PyLe ~$ ')
+        PyTorch_info = libraries.all_libraries('torch', 'Machin_Learning', 'PyTorch_dec', 'PyTorch_exm', 'https://pytorch.org/tutorials/beginner/pytorch_with_examples.html')
+        
+        if PyTorch.upper() == 'I':
+            PyTorch_info.AllLibs_install()
+            again_1()
+        
+        elif PyTorch.upper() == 'D':
+            PyTorch_info.AllLibs_dec()
+            again_1()
+        
+        elif PyTorch.upper() == 'E':
+            PyTorch_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    
+    # PyCaret
+    elif machine_lib == 11:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pycaret.org/')
+        print()
+        PyCaret = input(Fore.YELLOW + 'PyLe ~$ ')
+        if PyCaret.upper() == 'I':
+            machinlearning_class.pycaret_install()
+            again_1()
+        
+        elif PyCaret.upper() == 'D':
+            machinlearning_class.pycaret_dec()
+            again_1()
+        
+        elif PyCaret.upper() == 'E':
+            # using all_libraries.py
+            machinlearning_class.pycaret_exm1()
+            PyCaret_exm2 = input(Fore.YELLOW + 'PyLe ~$ ')
+            # show example 2 
+            if PyCaret_exm2.upper() == 'Y':
+                machinlearning_class.pycaret_exm2()
+                again_1()  
+
+            elif PyCaret_exm2.upper() == 'N':
+                again_1()
+
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                again_1()     
+
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    
+    # Menu
     elif machine_lib == 1000:
         system('clear')
         contact()
@@ -434,7 +499,6 @@ def machine_learning():
     else:
         print(Fore.RED+'[!]──# Wrong Value')
         again_1()
-
 
 
 #Telegram Robots
@@ -470,33 +534,20 @@ def telegram_bots():
   if robots_lib == 1:
     print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Examples 'E.'")
     print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pypi.org/project/python-telegram-bot/')
-    print('')
+    print()
     python_telegram_bot = input(Fore.YELLOW +'PyLe ~$ ')
+    python_telegram_bot_info = libraries.all_libraries('python-telegram-bot', 'Telegram_bots', 'python_telegram_bot_dec', 'python_telegram_bot_exm', 'https://python-telegram-bot.readthedocs.io/en/stable/')
+    
     if python_telegram_bot.upper() == 'I':
-      print ('')
-      print(Fore.YELLOW + '<---Installation--->')
-      print (Fore.WHITE + 'pip install python-telegram-bot')
-      print(Fore.YELLOW + '<---Installation--->') 
-      print('')
+      python_telegram_bot_info.AllLibs_install()
       again_1()
 
     elif python_telegram_bot.upper() == 'D':
-      print('')
-      print(Fore.YELLOW + '<---Description--->')
-      print (Fore.WHITE + json.loads( data )['Telegram_bots']['python_telegram_bot_dec'])
-      print('')
-      print(Fore.YELLOW + '<---Description--->')
-      print('')
+      python_telegram_bot_info.AllLibs_dec()
       again_1()
 
     elif python_telegram_bot.upper() == 'E':
-      print('')
-      print(Fore.YELLOW + '<---Example--->')
-      print(Fore.CYAN + 'More Details : https://python-telegram-bot.readthedocs.io/en/stable/')
-      print (Fore.WHITE + json.loads( data )['Telegram_bots']['python_telegram_bot_exm'])
-      print('')
-      print(Fore.YELLOW + '<---Example--->')
-      print('')
+      python_telegram_bot_info.AllLibs_exm()
       again_1()
       
     else:
@@ -507,34 +558,18 @@ def telegram_bots():
   elif robots_lib == 2:
     print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
     print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pypi.org/project/Pyrogram/')
-    print('')
+    print()
     pyrogram = input(Fore.YELLOW +'PyLe ~$ ')
     if pyrogram.upper() == 'I':
-      print ('')
-      print(Fore.YELLOW + '<---Installation--->')
-      print (Fore.WHITE + 'pip install Pyrogram')
-      print(Fore.YELLOW + '<---Installation--->') 
-      print('')
+      telegrambots_class.Pyrogram_install()
       again_1()
           
     elif pyrogram.upper() == 'D':
-      print('')
-      print(Fore.YELLOW + '<---Description--->')
-      print(Fore.WHITE + json.loads( data )['Telegram_bots']['pyrogram_dec'])
-      print(Fore.RED + json.loads( data )['Telegram_bots']['pyrogram_req'])
-      print('')
-      print(Fore.YELLOW + '<---Description--->')
-      print('')
+      telegrambots_class.Pyrogram_dec()
       again_1()
       
     elif pyrogram.upper() == 'E':
-      print('')
-      print(Fore.YELLOW + '<---Example--->')
-      print(Fore.CYAN + 'More Details : https://docs.pyrogram.org/start/examples/')
-      print(Fore.WHITE + json.loads( data )['Telegram_bots']['pyrogram_exm'])
-      print('')
-      print(Fore.YELLOW + '<---Example--->')
-      print('')
+      telegrambots_class.Pyrogram_exm()
       again_1()
 
     else:
@@ -544,33 +579,21 @@ def telegram_bots():
 
   elif robots_lib == 3:
     print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
-    print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pypi.org/project/telegram.py/')
-    print('')
-    pyrogram = input(Fore.YELLOW +'PyLe ~$ ')
-    if pyrogram.upper() == 'I':
-      print ('')
-      print(Fore.YELLOW + '<---Installation--->')
-      print (Fore.WHITE + 'pip install telegram.py')
-      print(Fore.YELLOW + '<---Installation--->') 
-      print('')
-      again_1()
+    print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://telegrampy.readthedocs.io/en/latest/?badge=latest')
+    print()
+    telegram_py = input(Fore.YELLOW +'PyLe ~$ ')
+    telegram_py_info = libraries.all_libraries('telegram.py', 'Telegram_bots', 'telegram_dec', 'telegram_exm', 'https://telegrampy.readthedocs.io/en/latest/quickstart.html')
+    
+    if telegram_py.upper() == 'I':
+        telegram_py_info.AllLibs_install()
+        again_1()
           
-    elif pyrogram.upper() == 'D':
-      print('')
-      print(Fore.YELLOW + '<---Description--->')
-      print(Fore.WHITE + json.loads( data )['Telegram_bots']['telegram_dec'])
-      print('')
-      print(Fore.YELLOW + '<---Description--->')
-      print('')
-      again_1()
+    elif telegram_py.upper() == 'D':
+        telegram_py_info.AllLibs_dec()
+        again_1()
       
-    elif pyrogram.upper() == 'E':
-      print('')
-      print(Fore.YELLOW + '<---Example--->')
-      print(Fore.WHITE + json.loads( data )['Telegram_bots']['telegram_exm'])
-      print('')
-      print(Fore.YELLOW + '<---Example--->')
-      print('')
+    elif telegram_py.upper() == 'E':
+      telegram_py_info.AllLibs_exm()
       again_1()
 
     else:
@@ -598,7 +621,7 @@ def telegram_bots():
     again_1()
   
   
-  #Game Development
+#Game Development
 def game_dev():
     print(random_color [0] + '''
    ____      _      __  __  U _____ u      ____  U _____ u__     __   
@@ -631,33 +654,20 @@ U /"___|uU  /"\  uU|' \/ '|u\| ___"|/     |  _"\ \| ___"|/\ \   /"/u
     if g_dev == 1:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://www.pygame.org/docs/')
-        print('')
+        print()
         pygame = input(Fore.YELLOW +'PyLe ~$ ')
+        pygame_info = libraries.all_libraries('pygame', 'game_devel', 'pygame_dec', 'pygame_exm', 'https://www.pygame.org/docs/ref/examples.html')
+        
         if pygame.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install pygame')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            pygame_info.AllLibs_install()
             again_1()
         
         elif pygame.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print(Fore.WHITE + json.loads( data )['game_devel']['pygame_dec'])
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            pygame_info.AllLibs_dec()
             again_1()
 
         elif pygame.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://www.pygame.org/docs/ref/examples.html')
-            print(Fore.WHITE + json.loads( data )['game_devel']['pygame_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            pygame_info.AllLibs_exm()
             again_1()
 
         else:
@@ -668,33 +678,20 @@ U /"___|uU  /"\  uU|' \/ '|u\| ___"|/     |  _"\ \| ___"|/\ \   /"/u
     elif g_dev == 2:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Examples 'E.'")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.python.org/3/library/turtle.html')
-        print('')
+        print()
         turtles = input(Fore.YELLOW +'PyLe ~$ ')
+        turtles_info = libraries.all_libraries('turtles', 'game_devel', 'turtles_dec', 'turtles_exm', 'https://michael0x2a.com/blog/turtle-examples')
+        
         if turtles.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install turtles')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            turtles_info.AllLibs_install()
             again_1()
 
         elif turtles.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print(Fore.WHITE + json.loads( data )['game_devel']['turtles_dec'])
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            turtles_info.AllLibs_dec()
             again_1()
 
         elif turtles.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://michael0x2a.com/blog/turtle-examples')
-            print(Fore.WHITE + json.loads( data )['game_devel']['turtles_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            turtles_info.AllLibs_exm()
             again_1()
       
         else:
@@ -704,33 +701,20 @@ U /"___|uU  /"\  uU|' \/ '|u\| ___"|/     |  _"\ \| ___"|/\ \   /"/u
     elif g_dev == 3:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Examples 'E.'")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' http://pyopengl.sourceforge.net/documentation/index.html')
-        print('')
+        print()
         pyopengl = input(Fore.YELLOW +'PyLe ~$ ')
+        pyopengl_info = libraries.all_libraries('PyOpenGL', 'game_devel', 'PyOpenGL_dec', 'PyOpenGL_exm', 'https://noobtuts.com/python/opengl-introduction')
+        
         if pyopengl.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install PyOpenGL')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            pyopengl_info.AllLibs_install()
             again_1()
 
         elif pyopengl.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print(Fore.WHITE + json.loads( data )['game_devel']['PyOpenGL_dec']) 
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            pyopengl_info.AllLibs_dec()
             again_1()
 
         elif pyopengl.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://noobtuts.com/python/opengl-introduction')
-            print(Fore.WHITE + json.loads( data )['game_devel']['PyOpenGL_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            pyopengl_info.AllLibs_exm()
             again_1()
       
         else:
@@ -789,33 +773,20 @@ def ft_enc():
     if ft_en == 1:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://cryptography.io/en/latest/')
-        print('')
+        print()
         cryptography = input(Fore.YELLOW +'PyLe ~$ ')
+        cryptography_info = libraries.all_libraries('cryptography', 'file_enc', 'cryptography_dec', 'cryptography_exm', 'https://cryptography.io/en/latest/')
+        
         if cryptography.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install cryptography')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            cryptography_info.AllLibs_install()
             again_1()
             
         elif cryptography.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print(Fore.WHITE + json.loads( data )['file_enc']['cryptography_dec'])
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            cryptography_info.AllLibs_dec()
             again_1()
 
         elif cryptography.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://cryptography.io/en/latest/')
-            print(Fore.WHITE + json.loads( data )['file_enc']['cryptography_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            cryptography_info.AllLibs_exm()
             again_1()
 
         else:
@@ -825,33 +796,20 @@ def ft_enc():
     elif ft_en == 2:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pypi.org/project/pycrypto/')
-        print('')
+        print()
         pycrypto = input(Fore.YELLOW +'PyLe ~$ ')
+        pycrypto_info = libraries.all_libraries('pycrypto', 'file_enc', 'pycrypto_dec', 'pycrypto_exm', 'https://www.dlitz.net/software/pycrypto/')
+        
         if pycrypto.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install pycrypto')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            pycrypto_info.AllLibs_install()
             again_1()
 
         elif pycrypto.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print(Fore.WHITE + json.loads( data )['file_enc']['pycrypto_dec'])
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            pycrypto_info.AllLibs_dec()
             again_1()
 
         elif pycrypto.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://www.dlitz.net/software/pycrypto/')
-            print(Fore.WHITE + json.loads( data )['file_enc']['pycrypto_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            pycrypto_info.AllLibs_exm()
             again_1()
 
         else:
@@ -861,33 +819,20 @@ def ft_enc():
     elif ft_en == 3:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://www.aescrypt.com/pyaescrypt.html')
-        print('')
+        print()
         pyaescrypt = input(Fore.YELLOW +'PyLe ~$ ')
+        pyaescrypt_info = libraries.all_libraries('pyAesCrypt', 'file_enc', 'pyAesCrypt_dec', 'pyAesCrypt_exm', 'https://pypi.org/project/pyAesCrypt/')
+        
         if pyaescrypt.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install pyAesCrypt')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            pyaescrypt_info.AllLibs_install()
             again_1()
 
         elif pyaescrypt.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print(Fore.WHITE + json.loads( data )['file_enc']['pyAesCrypt_dec'])
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            pyaescrypt_info.AllLibs_dec()
             again_1()
 
         elif pyaescrypt.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://pypi.org/project/pyAesCrypt/')
-            print(Fore.WHITE + json.loads( data )['file_enc']['pyAesCrypt_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            pyaescrypt_info.AllLibs_exm()
             again_1()
 
         else:
@@ -950,33 +895,20 @@ Y88b  d88P Y88b.Y8b88P 888           888      888 888 d88P
     if sql_plib == 1:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.python.org/3/library/sqlite3.html#module-sqlite3')
-        print('')
+        print()
         SQLite = input(Fore.YELLOW +'PyLe ~$ ')
+        SQLite_info = libraries.all_libraries('pysqlite3', 'sqllib', 'SQLite_dec', 'SQLite_exm', 'https://www.tutorialspoint.com/sqlite/sqlite_python.htm')
+        
         if SQLite.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install pysqlite3')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            SQLite_info.AllLibs_install()
             again_1()
 
         elif SQLite.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print(Fore.WHITE + json.loads( data )['sqllib']['SQLite_dec'])
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            SQLite_info.AllLibs_dec()
             again_1()
 
         elif SQLite.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://www.tutorialspoint.com/sqlite/sqlite_python.htm')
-            print(Fore.WHITE + json.loads( data )['sqllib']['SQLite_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            SQLite_info.AllLibs_exm()
             again_1()
 
         else:
@@ -986,33 +918,20 @@ Y88b  d88P Y88b.Y8b88P 888           888      888 888 d88P
     elif sql_plib == 2:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://dev.mysql.com/doc/connector-python/en/connector-python-introduction.html')
-        print('')
+        print()
         MySQL = input(Fore.YELLOW +'PyLe ~$ ')
+        MySQL_info = libraries.all_libraries('mysql-connector-python', 'sqllib', 'mysql_dec', 'mysql_exm', 'https://www.w3schools.com/python/python_mysql_select.asp')
+        
         if MySQL.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install mysql-connector-python')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            MySQL_info.AllLibs_install()
             again_1()
 
         elif MySQL.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print(Fore.WHITE + json.loads( data )['sqllib']['mysql_dec'])
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            MySQL_info.AllLibs_dec()
             again_1()
 
         elif MySQL.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://www.w3schools.com/python/python_mysql_select.asp')
-            print(Fore.WHITE + json.loads( data )['sqllib']['mysql_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            MySQL_info.AllLibs_exm()
             again_1()
 
         else:
@@ -1023,33 +942,20 @@ Y88b  d88P Y88b.Y8b88P 888           888      888 888 d88P
     elif sql_plib == 3:
         print (Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://www.tutorialspoint.com/postgresql/postgresql_python.htm')
-        print('')
+        print()
         postgres = input(Fore.YELLOW +'PyLe ~$ ')
+        postgres_info = libraries.all_libraries('postgres', 'sqllib', 'postgres_dec', 'postgres_exm', 'https://stackabuse.com/working-with-postgresql-in-python/')
+        
         if postgres.upper() == 'I':
-            print ('')
-            print(Fore.YELLOW + '<---Installation--->')
-            print (Fore.WHITE + 'pip install postgres')
-            print(Fore.YELLOW + '<---Installation--->') 
-            print('')
+            postgres_info.AllLibs_install()
             again_1()
 
         elif postgres.upper() == 'D':
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print(Fore.WHITE + json.loads( data )['sqllib']['postgres_dec'])
-            print('')
-            print(Fore.YELLOW + '<---Description--->')
-            print('')
+            postgres_info.AllLibs_dec()
             again_1()
 
         elif postgres.upper() == 'E':
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print(Fore.CYAN + 'More Details : https://stackabuse.com/working-with-postgresql-in-python/')
-            print(Fore.WHITE + json.loads( data )['sqllib']['postgres_exm'])
-            print('')
-            print(Fore.YELLOW + '<---Example--->')
-            print('')
+            postgres_info.AllLibs_exm()
             again_1()
 
         else:
@@ -1078,39 +984,485 @@ Y88b  d88P Y88b.Y8b88P 888           888      888 888 d88P
         again_1()
 
 
-# For beginners
-def For_beginners():
-    print(random_color [0] + '''    
-   .-._.---'           .-.                                                      
-  (_) /               (_) )-.                   .-.                             
-     /--..-._.).--.      / __)    .-.  .-.      `-'.  .-..  .-.   .-.  ).--..   
-    /   (   )/          /    `. ./.-'_(   )    /    )/   ))/   )./.-'_/    / \  
- .-/     `-'/          /'      )(__.'  `-/-'_.(__. '/   ('/   ( (__.'/    / ._) 
-(_/                 (_/  `----'      -._/                `-    `-        /         
-''')
+# Other Libraries
+def other():
+    print(random_color [0] + '''
+ ____, ____,__, _,____,____,   __,  __, ____ ____, 
+(-/  \(-|  (-|__|(-|_,(-|__)  (-|  (-| (-|__|-(__  
+ _\__/,_|,  _|  |,_|__,_|  \,  _|__,_|_,_|__)____) 
+(     (    (     (    (       (    (   (    (                                                         
+    ''')
+    print()
+    print(Fore.LIGHTWHITE_EX + '[#]' + Fore.LIGHTBLUE_EX + ' Here i prepared a list of someother Python Libraries.')
+    print(Fore.LIGHTWHITE_EX + '[#]' + Fore.LIGHTGREEN_EX + ' I wish it can helps you :)')
+    print(Fore.LIGHTMAGENTA_EX + '''
+::::::::::::::::::::::::::::::::::::::::::
+: |_1_| ~>  Os (Operating System)        :
+: |_2_| ~>  Subprocess                   :
+: |_3_| ~>  Urllib Request               :
+: |_4_| ~>  Requests                     :
+: |_5_| ~>  Tkinter                      :
+: |_6_| ~>  PyQt                         :
+: |_7_| ~>  MoviePy                      :
+: |_8_| ~>  datetime                     :
+: |_9_| ~>  Pendulum                     :
+: |_10_| ~> Pillow                       :
+: |_11_| ~> OpenCV Python                :
+: |_12_| ~> Theano                       :                      
+: |_13_| ~> Fire                         :
+: |_14_| ~> Arrow                        :
+: |_15_| ~> FlashText                    :
+: |_16_| ~> wxPython                     :
+: |_17_| ~> Cirq                         :
+: |_18_| ~> Json                         :
+: |_19_| ~> Sys                          :
+:                                        :
+: |_99_| ~> Main Menu                    :
+: |_100_| ~> Update                      :
+: |_0_| ~> Exit                          :
+::::::::::::::::::::::::::::::::::::::::::''')
 
-    print (Fore.YELLOW + '[#]' + Fore.MAGENTA+ ' Welcome to the Beginners Menue.')
-    print (Fore.YELLOW + '[#]' + Fore.MAGENTA+ ' In this section you can find books and movies suitable for starting Python.')
-    print (Fore.GREEN + '[#]' + Fore.MAGENTA+ ' What do you want?')
-    print (Fore.BLUE +'''
-<<<<<<<<--->>>>>>>>
-[1] => BooKs
+    print()
+    other_list = int(input(Fore.YELLOW + 'PyLe ~$ '))
+    # Os
+    if other_list == 1:
+        print (Fore.MAGENTA + "(Os dosen't need Installation), Description 'D', Example 'E'.")
+        print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.python.org/3/library/os.html')
+        print()
+        Os = input(Fore.YELLOW + 'PyLe ~$ ')
+        if Os.upper() == 'D':
+            other_class.Os_dec()
+            again_1()
+        
+        elif Os.upper() == 'E':
+            other_class.Os_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')            
+            again_1()
+    
+    # Subprocess
+    elif other_list == 2:
+        print(Fore.MAGENTA + "(Subprocess dosen't need Installation), Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.python.org/3/library/asyncio-subprocess.html')
+        print()
+        Subprocess = input(Fore.YELLOW + 'PyLe ~$ ')
+        if Subprocess.upper() == 'D':
+            other_class.subprocess_dec()
+            again_1()
+        
+        elif Subprocess.upper() == 'E':
+            other_class.subprocess_exm()
+            again_1()
 
-#####
-More Option Coming !
-#####
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    
+    # Urllib Request
+    elif other_list == 3:
+        print(Fore.MAGENTA + "(Urllib Request dosen't need Installation), Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.python.org/3/library/urllib.request.html#module-urllib.request')
+        print()
+        urllib_request = input(Fore.YELLOW + 'PyLe ~$ ')
+        if urllib_request.upper() == 'D':
+            other_class.UrllibRequest_dec()
+            again_1()
+        
+        elif urllib_request.upper() == 'E':
+            other_class.UrllibRequest_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
 
-[1000] ~> About Author && Contact Author
-[100] ~> Update
-[99] ~> Main Menu
-[0] ~> Exit
-<<<<<<<<--->>>>>>>>''')
 
-    for_beginners = int(input(Fore.YELLOW +'PyLe ~$ '))
-    if for_beginners == 1:
+    # Requests
+    elif other_list == 4:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.python-requests.org/en/master/')
+        print()
+        Requests = input(Fore.YELLOW + 'PyLe ~$ ')
+        Requests_info = libraries.all_libraries('requests', 'other', 'requests_dec', 'requests_exm', 'https://docs.python-requests.org/en/master/user/quickstart/')
+        if Requests.upper() == 'I':
+            Requests_info.AllLibs_install()
+            again_1()
+        
+        elif Requests.upper() == 'D':
+            Requests_info.AllLibs_dec()
+            again_1()
+        
+        elif Requests.upper() == 'E':
+            Requests_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    
+    # Tkinter
+    elif other_list == 5:
+        print(Fore.MAGENTA + "(Tkinter dosen't need Installation), Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.python.org/3/library/tkinter.html')
+        print()
+        tkinter = input(Fore.YELLOW + 'PyLe ~$ ')
+        if tkinter.upper() == 'D':
+            other_class.Tkinter_dec()
+            again_1()
+        
+        elif tkinter.upper() == 'E':
+            other_class.Tkinter_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    
+    # PyQt
+    elif other_list == 6:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://riverbankcomputing.com/software/pyqt/')
+        print()
+        pyqt = input(Fore.YELLOW + 'PyLe ~$ ')
+        if pyqt.upper() == 'I':
+            other_class.PyQt5_installtion()
+            again_1()
+        
+        elif pyqt.upper() == 'D':
+            other_class.PyQt5_dec()
+            again_1()
+        
+        elif pyqt.upper() == 'E':
+            other_class.PyQt5_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+
+    # MoviePy
+    elif other_list == 7:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://zulko.github.io/moviepy/')
+        print()
+        moviepy = input(Fore.YELLOW + 'PyLe ~$ ')
+        moviepy_info = libraries.all_libraries('moviepy', 'other', 'MoviePy_dec', 'MoviePy_exm', 'https://zulko.github.io/moviepy/examples/examples.html')
+        if moviepy.upper() == 'I':
+            moviepy_info.AllLibs_install()
+            again_1()
+        
+        elif moviepy.upper() == 'D':
+            moviepy_info.AllLibs_dec()
+            again_1()
+
+        elif moviepy.upper() == 'E':
+            moviepy_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    
+    # datetime
+    elif other_list == 8:
+        print(Fore.MAGENTA + "(datetime dosen't need Installation), Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.python.org/3/library/datetime.html')
+        print()
+        datetime = input(Fore.YELLOW + 'PyLe ~$ ')
+        if datetime.upper() == 'D':
+            other_class.datetime_dec()
+            again_1()
+        
+        elif datetime.upper() == 'E':
+            other_class.datetime_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+
+    # Pendulum
+    elif other_list == 9:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://pendulum.eustace.io/docs/')
+        print()
+        Pendulum = input(Fore.YELLOW + 'PyLe ~$ ')
+        Pendulum_info = libraries.all_libraries('pendulum', 'other', 'Pendulum_dec', 'Pendulum_exm', 'https://pendulum.eustace.io/')
+        if Pendulum.upper() == 'I':
+            Pendulum_info.AllLibs_install()
+            again_1()
+        
+        elif Pendulum.upper() == 'D':
+            Pendulum_info.AllLibs_dec()
+            again_1()
+        
+        elif Pendulum.upper() == 'E':
+            Pendulum_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+
+    # Pillow
+    elif other_list == 10:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://python-pillow.org/')
+        print()
+        Pillow = input(Fore.YELLOW + 'PyLe ~$ ')
+        Pillow_info = libraries.all_libraries('Pillow', 'other', 'Pillow_dec', 'Pillow_exm', 'https://pillow.readthedocs.io/en/stable/reference/Image.html#examples')
+        if Pillow.upper() == 'I':
+            Pillow_info.AllLibs_install()
+            again_1()
+        
+        elif Pillow.upper() == 'D':
+            Pillow_info.AllLibs_dec()
+            again_1()
+
+        
+        elif Pillow.upper() == 'E':
+            Pillow_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+
+    # OpenCV Python
+    elif other_list == 11:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.opencv.org/master/d6/d00/tutorial_py_root.html')
+        print()
+        opencv = input(Fore.YELLOW + 'PyLe ~$ ')
+        opencv_info = libraries.all_libraries('opencv-python', 'other', 'OpenCVPython_dec', 'OpenCVPython_exm', 'https://docs.opencv.org/master/dc/d4d/tutorial_py_table_of_contents_gui.html')
+        if opencv.upper() == 'I':
+            opencv_info.AllLibs_install()
+            again_1()
+
+        elif opencv.upper() == 'D':
+            opencv_info.AllLibs_dec()
+            again_1()
+
+        elif opencv.upper() == 'E':
+            opencv_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+
+    # Theano
+    elif other_list == 12:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://www.tutorialspoint.com/theano/index.htm')
+        print()
+        Theano = input(Fore.YELLOW + 'PyLe ~$ ')
+        Theano_info = libraries.all_libraries('Theano', 'other', 'Theano_dec', 'Theano_exm', 'https://docs.python-requests.org/en/master/user/quickstart/')
+        if Theano.upper() == 'I':
+            Theano_info.AllLibs_install()
+            again_1()
+        
+        elif Theano.upper() == 'D':
+            Theano_info.AllLibs_dec()
+            again_1()
+        
+        elif Theano.upper() == 'E':
+            Theano_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    
+    # Fire
+    elif other_list == 13:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://google.github.io/python-fire/')
+        print()
+        Fire = input(Fore.YELLOW + 'PyLe ~$ ')
+        Fire_info = libraries.all_libraries('fire', 'other', 'Fire_dec', 'Fire_exm', 'https://google.github.io/python-fire/guide/#hello-world')
+        if Fire.upper() == 'I':
+            Fire_info.AllLibs_install()
+            again_1()
+
+        elif Fire.upper() == 'D':
+            Fire_info.AllLibs_dec()
+            again_1()
+
+        elif Fire.upper() == 'E':
+            Fire_info.AllLibs_exm()    
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+
+    # Arrow
+    elif other_list == 14:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://arrow.readthedocs.io/en/latest/')
+        print()
+        Arrow = input(Fore.YELLOW + 'PyLe ~$ ')
+        Arrow_info = libraries.all_libraries('arrow', 'other', 'Arrow_dec', 'Arrow_exm', 'https://arrow.readthedocs.io/en/latest/#example-usage')
+        if Arrow.upper() == 'I':
+            Arrow_info.AllLibs_install()
+            again_1()
+        
+        elif Arrow.upper() == 'D':
+            Arrow_info.AllLibs_dec()
+            again_1()
+        
+        elif Arrow.upper() == 'E':
+            Arrow_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+        
+    # FlashText
+    elif other_list == 15:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://flashtext.readthedocs.io/en/latest/')
+        print()
+        FlashText = input(Fore.YELLOW + 'PyLe ~$ ')
+        FlashText_info = libraries.all_libraries('flashtext', 'other', 'FlashText_dec', 'FlashText_exm', 'https://flashtext.readthedocs.io/en/latest/#usage')
+        if FlashText.upper() == 'I':
+            FlashText_info.AllLibs_install()
+            again_1()
+        
+        elif FlashText.upper() == 'D':
+            FlashText_info.AllLibs_dec()
+            again_1()
+        
+        elif FlashText.upper() == 'E':
+            FlashText_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+
+    # wxPython
+    elif other_list == 16:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://wxpython.org/')
+        print()
+        wxPython = input(Fore.YELLOW + 'PyLe ~$ ')
+        wxPython_info = libraries.all_libraries('wxPython', 'other', 'wxPython_dec', 'wxPython_exm', 'https://docs.wxpython.org/')
+        if wxPython.upper() == 'I':
+            wxPython_info.AllLibs_install()
+            again_1()
+        
+        elif wxPython.upper() == 'D':
+            wxPython_info.AllLibs_dec()
+            again_1()
+        
+        elif wxPython.upper() == 'E':
+            wxPython_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+
+    # Cirq
+    elif other_list == 17:
+        print(Fore.MAGENTA + "For Installation type 'I', Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://quantumai.google/cirq/install')
+        print()
+        Cirq = input(Fore.YELLOW + 'PyLe ~$ ')
+        Cirq_info = libraries.all_libraries('cirq', 'other', 'Cirq_dec', 'Cirq_exm', 'https://quantumai.google/cirq/start')
+        if Cirq.upper() == 'I':
+            Cirq_info.AllLibs_install()
+            again_1()
+
+        elif Cirq.upper() == 'D':
+            Cirq_info.AllLibs_dec()
+            again_1()
+        
+        elif Cirq.upper() == 'E':
+            Cirq_info.AllLibs_exm()
+            again_1()
+        
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+
+    # Json
+    elif other_list == 18:
+        print(Fore.MAGENTA + "(Urllib Request dosen't need Installation), Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.python.org/3/library/json.html#basic-usage')
+        print()
+        JSON = input(Fore.YELLOW + 'PyLe ~$ ')
+        if JSON.upper() == 'D':
+            other_class.JSON_dec()
+            again_1()
+        
+        elif JSON.upper() == 'E':
+            other_class.JSON_exm()
+            again_1()
+
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+    
+    # Sys
+    elif other_list == 19:
+        print(Fore.MAGENTA + "(Urllib Request dosen't need Installation), Description 'D', Example 'E'.")
+        print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.python.org/3/library/sys.html')
+        print()
+        Sys = input(Fore.YELLOW + 'PyLe ~$ ')
+        if Sys.upper() == 'D':
+            other_class.Sys_dec()
+            again_1()
+        
+        elif Sys.upper() == 'E':
+            other_class.Sys_exm()
+            again_1()
+
+        else:
+            print(Fore.RED + '[!] Wrong Value')
+            again_1()
+
+    # Main Menu
+    elif other_list == 99:
         system('clear')
-        print (Fore.YELLOW + '[#]' + Fore.LIGHTMAGENTA_EX+ ' Here it is, Now you can choose your books :)')
-        print (Fore.LIGHTBLUE_EX +'''
+        start()
+    
+    elif other_list == 100:
+        system('clear')
+        update()
+
+    elif other_list == 0:
+        print(Fore.YELLOW+'[-]──# Se You Later :)')
+
+    else:
+        print(Fore.RED + '[!] Wrong Value')
+        again_1()
+
+# Books
+def Books_func():
+    print(random_color [0] + """    
+            .-'''-.        .-'''-.                            
+           '   _    \     '   _    \                          
+/|       /   /` '.   \  /   /` '.   \     .                   
+||      .   |     \  ' .   |     \  '   .'|                   
+||      |   '      |  '|   '      |  '.'  |                   
+||  __  \    \     / / \    \     / /<    |                   
+||/'__ '.`.   ` ..' /   `.   ` ..' /  |   | ____         _    
+|:/`  '. '  '-...-'`       '-...-'`   |   | \ .'       .' |   
+||     | |                            |   |/  .       .   | / 
+||\    / '                            |    /\  \    .'.'| |// 
+|/\'..' /                             |   |  \  \ .'.'.-'  /  
+'  `'-'`                              '    \  \  \.'   \_.'   
+                                     '------'  '---'             
+""")
+    print()
+    print (Fore.YELLOW + '[#]' + Fore.LIGHTMAGENTA_EX+ ' Here it is, Now you can choose your books :)')
+    print (Fore.LIGHTBLUE_EX +'''
 ////////////////////////////////////////////////////////////////////
 | <1> => Learn Python in One Day                                   |
 | <2> => Python Programming for Beginners                          |
@@ -1123,155 +1475,151 @@ More Option Coming !
 | [0] ~> Exit                                                      |
 ////////////////////////////////////////////////////////////////////''')
 
-        books = int(input(Fore.YELLOW +'PyLe ~$ '))
-        if books == 1:
-            print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Learn Python in One Day.')
-            print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
-            Learn_Python = 'https://pyle-pythonlearning.ir/downloads/Learn%20Python%20in%20One%20Day.pdf'
-            print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (545.90 KB)')
-            def PythoninOne():
-                try:
-                    urllib.request.urlretrieve(Learn_Python, 'Learn Python in One Day (PyLe).pdf')
-                    print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
-                    sleep(1.0)
-                    system('clear')
-                    For_beginners()
+    books = int(input(Fore.YELLOW +'PyLe ~$ '))
+    if books == 1:
+        print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Learn Python in One Day.')
+        print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
+        Learn_Python = 'https://pyle-pythonlearning.ir/downloads/Learn%20Python%20in%20One%20Day.pdf'
+        print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (545.90 KB)')
+        def PythoninOne():
+            try:
+                urllib.request.urlretrieve(Learn_Python, 'Learn Python in One Day (PyLe).pdf')
+                print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                Books_func()
 
-                except:
-                    print(Fore.LIGHTRED_EX + 'No Internet !')
-                    print(Fore.LIGHTGREEN_EX + 'Trying...')
-                    sleep(3.0)
-                    PythoninOne()
-            PythoninOne()
+            except:
+                print(Fore.LIGHTRED_EX + 'No Internet !')
+                print(Fore.LIGHTGREEN_EX + 'Trying...')
+                sleep(3.0)
+                PythoninOne()
+        PythoninOne()
 
-        elif books == 2:
-            print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Python Programming for Beginners.')
-            print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
-            Python_Programming = 'https://pyle-pythonlearning.ir/downloads/Python%20Programming%20for%20Beginners.pdf'
-            print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (9.89 MB)')
-            def Python_Programming():
-                try:
-                    urllib.request.urlretrieve(Python_Programming, 'Python Programming for Beginners (PyLe).pdf')
-                    print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
-                    sleep(1.0)
-                    system('clear')
-                    For_beginners()
+    elif books == 2:
+        print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Python Programming for Beginners.')
+        print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
+        Python_Programming = 'https://pyle-pythonlearning.ir/downloads/Python%20Programming%20for%20Beginners.pdf'
+        print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (9.89 MB)')
+        def Python_Programming():
+            try:
+                urllib.request.urlretrieve(Python_Programming, 'Python Programming for Beginners (PyLe).pdf')
+                print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                Books_func()
 
-                except:
-                    print(Fore.LIGHTRED_EX + 'No Internet !')
-                    print(Fore.LIGHTGREEN_EX + '[#] Trying...')
-                    sleep(3.0)
-                    Python_Programming()
-            Python_Programming()
+            except:
+                print(Fore.LIGHTRED_EX + 'No Internet !')
+                print(Fore.LIGHTGREEN_EX + '[#] Trying...')
+                sleep(3.0)
+                Python_Programming()
+        Python_Programming()
         
-        elif books == 3:
-            print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + " You Choose PYTHON : PYTHON'S COMPANION.")
-            print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
-            PYTHON = "https://pyle-pythonlearning.ir/downloads/PYTHON'S%20COMPANION.pdf"
-            print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (10.78 MB)')
-            def PYTHONSCOMPANION():
-                try:
-                    urllib.request.urlretrieve(PYTHON, "PYTHONS COMPANION (PyLe).pdf")
-                    print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
-                    sleep(1.0)
-                    system('clear')
-                    For_beginners()
+    elif books == 3:
+        print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + " You Choose PYTHON : PYTHON'S COMPANION.")
+        print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
+        PYTHON = "https://pyle-pythonlearning.ir/downloads/PYTHON'S%20COMPANION.pdf"
+        print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (10.78 MB)')
+        def PYTHONSCOMPANION():
+            try:
+                urllib.request.urlretrieve(PYTHON, "PYTHONS COMPANION (PyLe).pdf")
+                print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                Books_func()
 
-                except:
-                    print(Fore.LIGHTRED_EX + 'No Internet !')
-                    print(Fore.LIGHTGREEN_EX + '[#] Trying...')
-                    sleep(3.0)
-                    PYTHONSCOMPANION()
-            PYTHONSCOMPANION()
-            
-
-        elif books == 4:
-            print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Black hat Python.')
-            print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
-            Black_hat = "https://pyle-pythonlearning.ir/downloads/Black%20hat%20Python.pdf"
-            print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (10.03 MB)')
-            def Blackhat():
-                try:
-                    urllib.request.urlretrieve(Black_hat, "Black hat Python (PyLe).pdf")
-                    print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
-                    sleep(1.0)
-                    system('clear')
-                    For_beginners()
-
-                except:
-                    print(Fore.LIGHTRED_EX + 'No Internet !')
-                    print(Fore.LIGHTGREEN_EX + '[#] Trying...')
-                    sleep(3.0)
-                    Blackhat()
-            Blackhat()
-            
-
-        elif books == 5:
-            print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Mastering Machine Learning with Python in Six Steps.')
-            print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
-            MasteringMachine = "https://pyle-pythonlearning.ir/downloads/Mastering%20Machine%20Learning%20with%20Python%20in%20Six%20Steps.pdf"
-            print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (9.60 MB)')
-            def MasteringMachine():
-                try:
-                    urllib.request.urlretrieve(MasteringMachine, "Mastering Machine Learning with Python in Six Steps (PyLe).pdf")
-                    print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
-                    sleep(1.0)
-                    system('clear')
-                    For_beginners()
-
-                except:
-                    print(Fore.LIGHTRED_EX + 'No Internet !')
-                    print(Fore.LIGHTGREEN_EX + '[#] Trying...')
-                    sleep(3.0)
-                    MasteringMachine()
-            MasteringMachine()
-            
+            except:
+                print(Fore.LIGHTRED_EX + 'No Internet !')
+                print(Fore.LIGHTGREEN_EX + '[#] Trying...')
+                sleep(3.0)
+                PYTHONSCOMPANION()
+        PYTHONSCOMPANION()
         
-        elif books == 6:
-            print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Automate the boring stuff with python.')
-            print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
-            Automate_the_boring = "https://pyle-pythonlearning.ir/downloads/automate%20the%20boring%20stuff%20with%20python.pdf"
-            print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (10.7 MB)')
-            def Automate():
-                try:
-                    urllib.request.urlretrieve(Automate_the_boring, "Automate the boring stuff with python (PyLe).pdf")
-                    print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
-                    sleep(1.0)
-                    system('clear')
-                    For_beginners()
 
-                except:
-                    print(Fore.LIGHTRED_EX + 'No Internet !')
-                    print(Fore.LIGHTGREEN_EX + '[#] Trying...')
-                    sleep(3.0)
-                    Automate()
-            Automate()
+    elif books == 4:
+        print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Black hat Python.')
+        print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
+        Black_hat = "https://pyle-pythonlearning.ir/downloads/Black%20hat%20Python.pdf"
+        print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (10.03 MB)')
+        def Blackhat():
+            try:
+                urllib.request.urlretrieve(Black_hat, "Black hat Python (PyLe).pdf")
+                print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                Books_func()
+
+            except:
+                print(Fore.LIGHTRED_EX + 'No Internet !')
+                print(Fore.LIGHTGREEN_EX + '[#] Trying...')
+                sleep(3.0)
+                Blackhat()
+        Blackhat()
+        
+
+    elif books == 5:
+        print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Mastering Machine Learning with Python in Six Steps.')
+        print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
+        MasteringMachine = "https://pyle-pythonlearning.ir/downloads/Mastering%20Machine%20Learning%20with%20Python%20in%20Six%20Steps.pdf"
+        print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (9.60 MB)')
+        def MasteringMachine():
+            try:
+                urllib.request.urlretrieve(MasteringMachine, "Mastering Machine Learning with Python in Six Steps (PyLe).pdf")
+                print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                Books_func()
+
+            except:
+                print(Fore.LIGHTRED_EX + 'No Internet !')
+                print(Fore.LIGHTGREEN_EX + '[#] Trying...')
+                sleep(3.0)
+                MasteringMachine()
+        MasteringMachine()
+        
+    
+    elif books == 6:
+        print(Fore.LIGHTGREEN_EX + '[*]' + Fore.LIGHTCYAN_EX + ' You Choose Automate the boring stuff with python.')
+        print(Fore.WHITE + '[#]' + Fore.LIGHTGREEN_EX + ' Well, Plese Wait' + Fore.LIGHTGREEN_EX + '...')
+        Automate_the_boring = "https://pyle-pythonlearning.ir/downloads/automate%20the%20boring%20stuff%20with%20python.pdf"
+        print(Fore.RED + '[~]' + Fore.LIGHTMAGENTA_EX + ' Downloading...' + Fore.YELLOW + ' (10.7 MB)')
+        def Automate():
+            try:
+                urllib.request.urlretrieve(Automate_the_boring, "Automate the boring stuff with python (PyLe).pdf")
+                print(Fore.LIGHTRED_EX + '[!]' + ' Done !')
+                sleep(1.0)
+                system('clear')
+                Books_func()
+
+            except:
+                print(Fore.LIGHTRED_EX + 'No Internet !')
+                print(Fore.LIGHTGREEN_EX + '[#] Trying...')
+                sleep(3.0)
+                Automate()
+        Automate()
             
-        elif books == 99:
-            system('clear')
-            start()
+    elif books == 99:
+        system('clear')
+        start()
 
-        elif books == 0:
-            print(Fore.YELLOW+'[-]──# Se You Later :)')
+    elif books == 0:
+        print(Fore.YELLOW+'[-]──# Se You Later :)')
 
-        else:
-            print(Fore.RED + '[!] Wrong Value')
-            again_1()
-
-    elif for_beginners == 1000:
+    elif books == 1000:
         system('clear')
         contact()
         again_1()
 
-    elif for_beginners == 100:
+    elif books == 100:
         system('clear')
         update()
 
-    elif for_beginners == 99:
+    elif books == 99:
         system('clear')
         start()
 
-    elif for_beginners == 0:
+    elif books == 0:
         print(Fore.YELLOW+'[-]──# Se You Later :)')
 
     else:
@@ -1309,9 +1657,9 @@ def wip():
 
     whs_python = int(input(Fore.YELLOW + 'PyLe ~$ '))
     if whs_python == 1:
-        print('')
+        print()
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://www.python.org/')
-        print('')
+        print()
         print(Fore.LIGHTMAGENTA_EX + '{--------------}')
         print(Fore.WHITE + json.loads( data )['what_is_python']['whs_py'])
         print(Fore.LIGHTMAGENTA_EX + '{--------------}')
@@ -1319,7 +1667,7 @@ def wip():
 
     elif whs_python == 2:
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://en.wikipedia.org/wiki/Python_(programming_language)#History')
-        print('')
+        print()
         print(Fore.LIGHTMAGENTA_EX + '{--------------}')
         print(Fore.WHITE + json.loads( data )['what_is_python']['woh_wrote'])
         print(Fore.LIGHTMAGENTA_EX + '{--------------}')
@@ -1327,7 +1675,7 @@ def wip():
 
     elif whs_python == 3:
         print (Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://en.wikipedia.org/wiki/Python_(programming_language)#History')
-        print('')
+        print()
         print(Fore.LIGHTMAGENTA_EX + '{--------------}')
         print(Fore.WHITE + json.loads( data )['what_is_python']['exm'])
         print(Fore.LIGHTMAGENTA_EX + '{--------------}')
@@ -1663,7 +2011,7 @@ def apps():
 def gui_ver():
     print(Fore.LIGHTCYAN_EX + '~> Well, You should know this is Beta GUI Version.')
     print(Fore.LIGHTGREEN_EX + '~> So, If there is any bug, please Let me know about it.')
-    print(Fore.LIGHTYELLOW_EX + '~> Now Choose, Download Exe File, Download Python Source or Both. (E/P/B)')
+    print(Fore.LIGHTYELLOW_EX + '~> Now Choose, Download Exe File, Download Python Source or Both. (E/P/B/ exit)')
     print()
     gui_pyle = input(Fore.YELLOW + 'PyLe ~$ ')
     if gui_pyle.upper() == 'E':
@@ -1698,6 +2046,10 @@ def gui_ver():
             print(Fore.LIGHTRED_EX + '[!] Connection Lost')
             sleep(1)
             again_1()
+    
+    elif gui_pyle.lower() == 'exit':
+        print(Fore.LIGHTCYAN_EX + '#___GOOD___LUCK___#')
+
     else:
         print(Fore.RED + '[!] Wrong Value')
         again_1()
@@ -1705,7 +2057,7 @@ def gui_ver():
 
 #Update
 def update():
-    print(Fore.RED + '[#]' + Fore.WHITE + ' This is 2.1 version')
+    print(Fore.RED + '[#]' + Fore.WHITE + ' This is 2.5 version')
     print(Fore.YELLOW + '[?]' + Fore.GREEN+ ' Do you wanna download last version From github? (Y/N)')
     version_pyle = input(Fore.YELLOW +'PyLe ~$ ')
     if version_pyle.upper() == 'Y':
@@ -1751,11 +2103,14 @@ def start():
 ▐░▌               ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
  ▀                 ▀       ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
  -------------
-| Version 2.1 |
+| Version 2.5 |
  -------------
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-| PyLe-PythonLearning.ir |
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ~~~~~~~~~~~~~~~~~~~~~~~~~
+| PyLe-PythonLearning.ir  |
+ ~~~~~~~~~~~~~~~~~~~~~~~~~
+ =================================
+| Telegram : @PyLe_PythonLearning |
+ =================================
 ''')
 
     print (Fore.YELLOW + '[$]' + Fore.LIGHTCYAN_EX+ ' Learn Python Libraries by Python script.')
@@ -1767,21 +2122,21 @@ def start():
 {-------------------------------------------------}
 { <Libraries>:                                    }
 {        [1] > Colors                             }
-{        [2] > Machine Learning                   }
+{        [2] > Machine Learning & DataAnalysis    }
 {        [3] > Telegram Robots                    }
 {        [4] > Game Development                   }
 {        [5] > File & Text Encryption             }
 {        [6] > Python SQL Libraries               }
+{        [7] > Other                              }
 {                                                 }
 { <Biginners>:                                    }
-{        [10] ~> For beginner                     }
-{        [99] ~> What Is Python ?                 }    
-{        [999] ~> Apps                            }
-{                                                 }
+{        [10] ~> Books                            }
+{        [90] ~> What Is Python ?                 }    
+{        [91] ~> Apps                             }
 {                                                 }
 { [20] ~> GUI Version Of PyLe                     }                                                   
 { [100] ~> Update                                 }  
-{ [1000] ~ > About Author && Contact Author       }
+{ [1000] ~> About Author && Contact Author        }
 { [0] Exit                                        }
 {-------------------------------------------------}''')
 
@@ -1811,10 +2166,14 @@ def start():
         elif pyle_start == 6:
             system('clear')
             sql_lib()
+        
+        elif pyle_start == 7:
+            system('clear')
+            other()
 
         elif pyle_start == 10:
             system('clear')
-            For_beginners()
+            Books_func()
         
         elif pyle_start == 20:
             system('clear')
@@ -1829,11 +2188,11 @@ def start():
             system('clear')
             update()
 
-        elif pyle_start == 99:
+        elif pyle_start == 90:
             system('clear')
             wip()
 
-        elif pyle_start == 999:
+        elif pyle_start == 91:
             system('clear')
             apps()
 
@@ -1851,5 +2210,5 @@ def start():
 start()
 
 # <------CoDed By AnonCODER------>
-# <------First Version : v2.1------>
+# <------v2.5------>
 # <------Help me improve it :)------>
