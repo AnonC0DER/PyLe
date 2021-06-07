@@ -1,5 +1,5 @@
 # <------CoDed By AnonCODER------>
-# <------First Version : v2.5----->
+# <------v2.5----->
 # <------Help me improve it :)------>
 
 # imports
@@ -2210,5 +2210,5 @@ def start():
 start()
 
 # <------CoDed By AnonCODER------>
-# <------First Version : v2.5------>
+# <------v2.5------>
 # <------Help me improve it :)------>
