@@ -126,6 +126,27 @@ PyLe > Python Learning
 2. => MySQL 
 3. => PostgreSQL
 
+## Othres :
+1. Os (Operating System)        
+2. Subprocess                   
+3. Urllib Request               
+4. Requests                     
+5. Tkinter                      
+6. PyQt                         
+7. MoviePy                      
+8. datetime                     
+9. Pendulum                     
+10. Pillow                       
+11. OpenCV Python                
+12. Theano                       
+13. Fire                         
+14. Arrow                        
+15. FlashText                    
+16. wxPython                     
+17. Cirq                         
+18. Json                        
+19. Sys
+
 ## Biginners & Professionals :
 10. Books
 90. What Is Python ?
