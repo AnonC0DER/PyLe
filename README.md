@@ -48,7 +48,7 @@ If there is any bug, Let me know.
 - [x] GUI Version
 - [x] PyLe WebSite
 - [X] Object-oriented programming
-- [ ] A kind of Surprise :)
+- [X] FreeCourses section Added
 
 # PyLe
 'Learn and introduce Python libraries with PyLe'
