@@ -88,16 +88,6 @@ PyLe > Python Learning
 6. Python SQL Libraries
 7. Other
 
-## Biginners :
-10. Books
-90. What Is Python ?
-91. Apps
-
-20. GUI Version Of PyLe
-1000. About Author
-100. Update
-0. Exit  
-
 ## Colors :
 1. => Colored
 2. => Colorma
@@ -136,10 +126,20 @@ PyLe > Python Learning
 2. => MySQL 
 3. => PostgreSQL
 
-## For Beginners :
-1. => Books
-2. => What Is Python ?
-3. Apps
+## Biginners & Professionals :
+10. Books
+90. What Is Python ?
+91. Apps
+
+## Tutorials :
+92. Free Courses
+
+20. GUI Version Of PyLe
+1000. About Author
+100. Update
+0. Exit  
+
+
 
 # Donation for PyLe Website : 
 15v1b5gsjMKkvVLRWjCxb8pzFvXjyWQBQ8
