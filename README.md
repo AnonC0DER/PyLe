@@ -2,7 +2,7 @@
 
 
 # New Update 3.0 !
-- Free Courses section, You can download free programming training videos.
+- Free Courses section Added, You can download free programming training videos.
 - 2 Two languages in Free Courses, English and Persian
 
 # Last Update 2.5 !
