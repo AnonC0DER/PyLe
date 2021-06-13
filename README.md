@@ -1,6 +1,11 @@
 ![alt text](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLe.png)
 
-#
+# New Update for PyLeGUI ! (Version 2.0)
+- Splash Screen Added !
+- Other section Added 
+- 6 Libraries Added to Machine Learning Section 
+[Download Version 2.0](https://github.com/AnonC0DER/PyLe#the-first-version-of-pyle-gui-is-ready-)
+
 # New Update 3.0 !
 - Free Courses section Added, You can download free programming training videos.
 - 2 Two languages in Free Courses, English and Persian
@@ -25,19 +30,28 @@
 
 
 # The First Version Of PyLe-GUI is Ready !
-### Use PyQt5 and pyinstaller for exe file.
-Now You Can Use PyLe-GUI.
-This is the first version of PyLe-GUI So, new updates are comming... :)
+### Use PyQt5 For Version 1.0, PySide2 For Version 2.0 and pyinstaller for exe file.
+Now You Can Use PyLe-GUI 2.0.
+New updates are comming... :)
 Please Send me your ideas for PyLe project.
 If there is any bug, Let me know.
 > (Tested On Windows 7,10 64bit) 
 
 ## Download Exe File :
-- https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI.rar
+- > Version 1.0 :
+- [PyLeGUI v1.0](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI.rar)
+
+- > Version 2.0 :
+- [PyLeGUI v2.0](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI2.0.zip)
+
 
 ## Download Python Source :
-- https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI-PythonSource.zip
-- https://github.com/AnonC0DER/PyLe/raw/main/PyLeGUI/PyLeGUI-PythonSource.zip
+- > Version 1.0 :
+- [PyLeGUI-PythonSource v1.0](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI-PythonSource.zip)
+
+- > Version 2.0 :
+- [PyLeGUI-PythonSource 2.0](https://github.com/AnonC0DER/PyLe/raw/main/PyLeGUI/PyLeGUI-2.0(PythonSource).zip)
+
 
 # Requirements for python source :
 - PyQt5 (pip install PyQt5)
