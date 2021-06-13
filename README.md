@@ -1,6 +1,6 @@
 ![alt text](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLe.png)
 
-
+#
 # New Update 3.0 !
 - Free Courses section Added, You can download free programming training videos.
 - 2 Two languages in Free Courses, English and Persian
@@ -24,8 +24,8 @@
 ### https://pyle-pythonlearning.ir
 
 
-### Bete Version Of PyLe-GUI is Ready !
-## Use PyQt5 and pyinstaller for exe file.
+# The First Version Of PyLe-GUI is Ready !
+### Use PyQt5 and pyinstaller for exe file.
 Now You Can Use PyLe-GUI.
 This is the first version of PyLe-GUI So, new updates are comming... :)
 Please Send me your ideas for PyLe project.
