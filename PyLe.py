@@ -1392,7 +1392,7 @@ def other():
 
     # Json
     elif other_list == 18:
-        print(Fore.MAGENTA + "(Urllib Request dosen't need Installation), Description 'D', Example 'E'.")
+        print(Fore.MAGENTA + "(Json dosen't need Installation), Description 'D', Example 'E'.")
         print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.python.org/3/library/json.html#basic-usage')
         print()
         JSON = input(Fore.YELLOW + 'PyLe ~$ ')
@@ -1410,7 +1410,7 @@ def other():
     
     # Sys
     elif other_list == 19:
-        print(Fore.MAGENTA + "(Urllib Request dosen't need Installation), Description 'D', Example 'E'.")
+        print(Fore.MAGENTA + "(Sys dosen't need Installation), Description 'D', Example 'E'.")
         print(Fore.YELLOW + 'Pay attention' + Fore.WHITE + ' For More Details =>' + Fore.BLUE + ' https://docs.python.org/3/library/sys.html')
         print()
         Sys = input(Fore.YELLOW + 'PyLe ~$ ')
@@ -2128,14 +2128,15 @@ def start():
 1        [6] > Python SQL Libraries                 0
 0        [7] > Other                                1
 1                                                   0
-1  echo "Biginners & Professionals";                1
-0        [10] ~> Books                              1
-1        [90] ~> What Is Python ?                   0    
-1        [91] ~> Apps                               0
+1  echo "Biginners & Professionals";                1                              
+1        [10] ~> What Is Python ?                   0    
+1        [11] ~> Apps                               0
 0                                                   1
 1  cout << "Tutorials" << endl;                     0
-0         [92] Free Courses                         1
-0                                                   1                  
+0         [90] >> Books                             0
+1         [91] >> Free Courses                      1
+0         [92]                                      0
+1                                                   0                  
 0  [20] ~> GUI Version Of PyLe                      1                                                   
 1  [100] ~> Update                                  0  
 0  [1000] ~> About Author && Contact Author         0
@@ -2176,7 +2177,11 @@ def start():
 
         elif pyle_start == 10:
             system('clear')
-            Books_func()
+            wip()
+
+        elif pyle_start == 11:
+            system('clear')
+            apps()
         
         elif pyle_start == 20:
             system('clear')
@@ -2193,13 +2198,9 @@ def start():
 
         elif pyle_start == 90:
             system('clear')
-            wip()
-
-        elif pyle_start == 91:
-            system('clear')
-            apps()
+            Books_func()
         
-        elif pyle_start == 92:
+        elif pyle_start == 91:
             system('clear')
             Courses.FreeCourses()
 
