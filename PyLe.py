@@ -2134,8 +2134,7 @@ def start():
 0                                                   1
 1  cout << "Tutorials" << endl;                     0
 0         [90] >> Books                             0
-1         [91] >> Free Courses                      1
-0         [92]                                      0
+1         [91] >> Free Courses                      1                                     
 1                                                   0                  
 0  [20] ~> GUI Version Of PyLe                      1                                                   
 1  [100] ~> Update                                  0  
