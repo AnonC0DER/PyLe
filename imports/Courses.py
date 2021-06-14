@@ -334,7 +334,7 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
         elif persian_courses == 8:
             system('clear')
             print(Fore.LIGHTGREEN_EX + '[@] ' + Fore.LIGHTCYAN_EX + 'In this video, you can learn how to make Random Numbers in Python.')
-            print(Fore.LIGHTYELLOW_EX + '[#] ' + Fore.LIGHTMAGENTA_EX + 'Teacher / Academy : AmirHossein Moalemi  |  Size : 51Mb')
+            print(Fore.LIGHTYELLOW_EX + '[#] ' + Fore.LIGHTMAGENTA_EX + 'Teacher / Academy : Qadir Yolme  |  Size : 51Mb')
             print(Fore.LIGHTRED_EX + "To support free tutoring teachers, See and subscribe teachers's YouTube account :")
             print(Fore.LIGHTWHITE_EX + "Teacher's / Academy's Youtube : Account = https://youtube.com/channel/UCO8iviFPYxykxTG1M7XdMKw")
             print(Fore.LIGHTWHITE_EX + 'Video Link = https://youtu.be/5ArbYwhV60Y')
