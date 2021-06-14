@@ -49,9 +49,9 @@ def FreeCourses():
     courses = input(Fore.LIGHTYELLOW_EX + 'PyLe ~$ ')
     if courses.upper() == 'P':
         print(Fore.LIGHTMAGENTA_EX + '''
-1 = Make A Simple Python Keylogger*
-2 = WhatsApp Bot With Python *
-3 = Write a simple RAT with Python*
+1 = Make A Simple Python Keylogger
+2 = WhatsApp Bot With Python
+3 = Write a simple RAT with Python
 4 = Complete tutorial on making a floppy bird game with Pygame
 5 = The best programming tools, install Python on Linux and Windows
 6 = Learn how to convert a Python program to an exe file
