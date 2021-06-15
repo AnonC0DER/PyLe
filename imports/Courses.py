@@ -422,6 +422,11 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
             elif numpy_video.upper() == 'N':
                 sleep(0.5)
                 FreeCourses()
+            
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                sleep(1.0)
+                FreeCourses()
         
         # Scikit Learn Course Machine Learning in Python Tutorial
         elif english_courses == 2:
@@ -454,6 +459,11 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
 
             elif Scikit_video.upper() == 'N':
                 sleep(0.5)
+                FreeCourses()
+            
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                sleep(1.0)
                 FreeCourses()
 
         # Keras with TensorFlow Course Python Deep Learning
@@ -488,6 +498,11 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
             elif Keras_video.upper() == 'N':
                 sleep(0.5)
                 FreeCourses()
+            
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                sleep(1.0)
+                FreeCourses()
 
         # Coding Telegram Bot using Python
         elif english_courses == 4:
@@ -520,6 +535,11 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
 
             elif TelegramBot_video.upper() == 'N':
                 sleep(0.5)
+                FreeCourses()
+            
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                sleep(1.0)
                 FreeCourses()
         
         # How To Create A Telegram Bot With Python
@@ -554,6 +574,11 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
             elif Create_A_TelegramBot_video.upper() == 'N':
                 sleep(0.5)
                 FreeCourses()
+            
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                sleep(1.0)
+                FreeCourses()
 
         # Complete Python Turtle Graphics Overview
         elif english_courses == 6:
@@ -586,6 +611,11 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
 
             elif Turtle_video.upper() == 'N':
                 sleep(0.5)
+                FreeCourses()
+            
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                sleep(1.0)
                 FreeCourses()
 
         # Python Game Development Course
@@ -620,6 +650,11 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
             elif GameDevelopment_vide.upper() == 'N':
                 sleep(0.5)
                 FreeCourses()
+            
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                sleep(1.0)
+                FreeCourses()
         
         # Step-by-Step Python and Postgres Tutorial with psycopg2
         elif english_courses == 8:
@@ -652,6 +687,11 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
 
             elif StepByStep_video.upper() == 'N':
                 sleep(0.5)
+                FreeCourses()
+            
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                sleep(1.0)
                 FreeCourses()
         
         # Matplotlib Crash Course
@@ -686,6 +726,11 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
             elif Matplotlib_video.upper() == 'N':
                 sleep(0.5)
                 FreeCourses()
+            
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                sleep(1.0)
+                FreeCourses()
         
         # Learn Python - Full Course for Beginners
         elif english_courses == 10:
@@ -718,6 +763,11 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
 
             elif LearnPython_video.upper() == 'N':
                 sleep(0.5)
+                FreeCourses()
+            
+            else:
+                print(Fore.RED + '[!] Wrong Value')
+                sleep(1.0)
                 FreeCourses()
         
         # FreeCourses Menu
