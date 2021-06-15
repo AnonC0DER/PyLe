@@ -662,7 +662,7 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
             print(Fore.LIGHTRED_EX + "To support free tutoring teachers, See and subscribe teachers's YouTube account :")
             print(Fore.LIGHTWHITE_EX + "Teacher's / Academy's Youtube : Account = https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ")
             print(Fore.LIGHTWHITE_EX + 'Video Link = https://youtu.be/3Xc3CA655Y4')
-            print(Fore.LIGHTBLUE_EX + 'Direct download link : https://dl.pyle-pythonlearning.ir/videos/eng/Step_by_Step_Python_and_Postgres_Tutorial_with_psycopg2.mp4')
+            print(Fore.LIGHTBLUE_EX + 'Direct download link : https://dl.pyle-pythonlearning.ir/videos/eng/Matplotlib_Crash_Course.mp4')
             print(Fore.LIGHTCYAN_EX + '------------------------------')
             # Download the Video
             Matplotlib_video = input(Fore.LIGHTGREEN_EX + 'Do You Wanna Download the video? (Y / N) : ')
