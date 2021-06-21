@@ -1,4 +1,4 @@
-![alt text](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLe.png)
+![alt text](https://pyle-pythonlearning.ir/downloads/PyleLogo.jpg)
 
 # New Update for PyLeGUI ! (Version 2.0)
 - Splash Screen Added !
