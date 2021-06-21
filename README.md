@@ -1,5 +1,10 @@
 ![alt text](https://pyle-pythonlearning.ir/downloads/PyleLogo.jpg)
 
+# New Update 3.2 !
+- Feedback system Added !
+- 2 more videos in FreeCourses Section
+- Bugs Fixed
+
 # New Update for PyLeGUI ! (Version 2.0)
 - Splash Screen Added !
 - Other section Added 
@@ -11,7 +16,7 @@
 - Free Courses section Added, You can download free programming training videos.
 - 2 Two languages in Free Courses, English and Persian
 
-# Last Update 2.5 !
+# Update 2.5 !
 - Use Object oriented programming
 - 25 New Libraries !
 - 6 new libraries added to Machine Learning Section
@@ -84,7 +89,7 @@ Easy installation :
 - Windows:
 - Use Cmder application (You can download it in PyLe)
 
-# Version 3.0
+# Version 3.2
 
 # What's meaning of PyLe?
 PyLe > Python Learning
@@ -173,7 +178,8 @@ PyLe > Python Learning
 20. GUI Version Of PyLe
 1000. About Author
 100. Update
-0. Exit  
+110. Send 
+102. Exit  
 
 
 
