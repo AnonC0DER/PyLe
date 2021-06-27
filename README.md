@@ -9,6 +9,7 @@
 - Splash Screen Added !
 - Other section Added 
 - 6 Libraries Added to Machine Learning Section 
+> pip install PySide2
 
 #### [Download Version 2.0](https://github.com/AnonC0DER/PyLe#the-first-version-of-pyle-gui-is-ready-)
 
