@@ -183,7 +183,7 @@ If there is any bug, [Let me know](https://github.com/AnonC0DER/PyLe#contact-me-
 15v1b5gsjMKkvVLRWjCxb8pzFvXjyWQBQ8
 
 # Screenshot : 
-![ScreenShot](img/PyLe-3.0.jpg)
+![ScreenShot](img/PyLe.gif)
 ![ScreenShot](img/PyLeGUI.jpg)
 
 # Contact me : 
