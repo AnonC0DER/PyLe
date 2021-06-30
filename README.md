@@ -81,7 +81,7 @@ If there is any bug, [Let me know](https://github.com/AnonC0DER/PyLe#contact-me-
 - [x] PyLe WebSite
 - [X] Object-oriented programming
 - [X] FreeCourses section Added
-- [-] Kind of suprise
+- [ ] Kind of suprise
 
 
 # Main Menu :
