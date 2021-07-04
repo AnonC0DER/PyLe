@@ -175,7 +175,7 @@ If there is any bug, [Let me know](https://github.com/AnonC0DER/PyLe#contact-me-
 1000. About Author
 1001. License
 1002. Update
-1003. Send 
+1003. FeedBack 
 1004. Exit  
 
 <-------------------------------------->
