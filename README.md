@@ -1,4 +1,4 @@
-![alt text](https://pyle-pythonlearning.ir/downloads/PyleLogo.jpg)
+![alt text](https://pyle-pythonlearning.ir/downloads/Github.jpg)
 
 # PyLe
 ## What's meaning of PyLe?
