@@ -1,4 +1,4 @@
-![alt text](https://pyle-pythonlearning.ir/downloads/Github.jpg)
+![alt text](https://pyle-pythonlearning.ir/downloads/PyleLogo.jpg)
 
 # PyLe
 ## What's meaning of PyLe?
@@ -10,7 +10,7 @@ But their problem is that they can not introduce libraries with proper categorie
 PyLe is here to helps you !<br />
 I have many ideas for PyLe, But i need to know someone know my script.<br />
 So, If you like PyLe idea help me improve it :)
-> Version 3.5
+> Version 4.0
 
 # Installation :
 Easy installation :
@@ -26,10 +26,10 @@ Easy installation :
 <-------------------------------------->
 
 # Updates News 
-## New Update 3.5 !
-- 10 new libraries in Other Section
-- Typing function Added 
-- Bugs Fixed
+## New Update 4.0 !
+- 7 new libraries in Other Section
+- Search function Added (Now You can search libraries in PyLe) 
+- Quit Time Added
 
 ## New Update for PyLeGUI ! (Version 2.0)
 - Splash Screen Added !
@@ -175,7 +175,7 @@ If there is any bug, [Let me know](https://github.com/AnonC0DER/PyLe#contact-me-
 1000. About Author
 1001. License
 1002. Update
-1003. FeedBack 
+1003. Send 
 1004. Exit  
 
 <-------------------------------------->
