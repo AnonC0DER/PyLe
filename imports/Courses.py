@@ -10,6 +10,9 @@ import urllib.request
 from colorama import Fore
 from time import sleep
 from os import system
+# Close time
+import time
+from datetime import datetime
 
 #colors class
 class colors:
@@ -866,6 +869,11 @@ Error Details : No internet connection, Server problems Or KeyboardInterrupt(Ctr
     # Close the script
     elif courses.lower() == 'exit':
         print(Fore.LIGHTCYAN_EX + '- Good Luck :)')
+        now = datetime.now()
+        print()
+        print(Fore.LIGHTGREEN_EX + 'Quit time -> ' + Fore.LIGHTCYAN_EX + now.strftime("%m/%d/%Y %H:%M:%S"))
+        print()
+
     
     else:
         print(Fore.RED + '[!] Wrong Value')
