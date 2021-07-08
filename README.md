@@ -9,7 +9,7 @@ There are many sites that introduce you to Python libraries. <br />
 But their problem is that they can not introduce libraries with proper categories.<br /> 
 PyLe is here to helps you !<br />
 I have many ideas for PyLe, But i need to know someone know my script.<br />
-So, If you like PyLe idea help me improve it :)
+So, If you like PyLe idea help me improve it :)<br />
 > Version 4.0
 
 # Installation :
