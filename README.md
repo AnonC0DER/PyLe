@@ -2,7 +2,7 @@
 
 # PyLe
 ## What's meaning of PyLe?
-> PyLe > Python Learning <br /> Learn and introduce Python libraries with PyLe
+> Learn and introduce Python libraries with PyLe
 We all know that there are many Python libraries.<br /> 
 Sometimes we have to go through a lot of problems to find the right library. <br />
 There are many sites that introduce you to Python libraries. <br />
