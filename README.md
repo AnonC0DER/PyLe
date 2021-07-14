@@ -24,6 +24,10 @@ Easy installation :
 - pip install colorama
 
 <-------------------------------------->
+# PyLeRobot is ready (Telegram Robot)
+Now you can use PyLe in your telegram account !<br />
+Easy & fast.
+> [PyLeRobot](https://t.me/PyLeRobot)
 
 # Updates News 
 ## New Update 4.0 !
