@@ -22,7 +22,9 @@ Easy installation :
 # Requirements :
 - python v3
 - pip install colorama
-
+<-------------------------------------->
+# Donation : 
+https://pyle.ir.page/
 <-------------------------------------->
 # PyLeRobot is ready (Telegram Robot)
 Now you can use PyLe in your telegram account !<br />
@@ -183,9 +185,6 @@ If there is any bug, [Let me know](https://github.com/AnonC0DER/PyLe#contact-me-
 1004. Exit  
 
 <-------------------------------------->
-# Donation : 
-15v1b5gsjMKkvVLRWjCxb8pzFvXjyWQBQ8
-
 # Screenshot : 
 ![ScreenShot](img/PyLe.gif)
 ![ScreenShot](img/PyLeGUI.jpg)
