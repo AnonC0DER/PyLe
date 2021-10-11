@@ -1,6 +1,3 @@
-![alt text](https://pyle-pythonlearning.ir/downloads/Github.jpg)
-
-
 # PyLe
 ## What's meaning of PyLe?
 > Learn and introduce Python libraries with PyLe
@@ -55,20 +52,6 @@ Please Send me your ideas for PyLe project.
 If there is any bug, [Let me know](https://github.com/AnonC0DER/PyLe#contact-me-).
 > (Tested On Windows 7,10 64bit) 
 
-## Download Exe File :
-- > Version 1.0 :
-- [PyLeGUI v1.0](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI.rar)
-
-- > Version 2.0 :
-- [PyLeGUI v2.0](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI2.0.zip)
-
-
-## Download Python Source :
-- > Version 1.0 :
-- [PyLeGUI-PythonSource v1.0](https://pyle-pythonlearning.ir/downloads/apps/PyLeGUI/PyLeGUI-PythonSource.zip)
-
-- > Version 2.0 :
-- [PyLeGUI-PythonSource 2.0](https://github.com/AnonC0DER/PyLe/raw/main/PyLeGUI/PyLeGUI-2.0(PythonSource).zip)
 
 # Requirements for python source :
 - Version 2.0 = PySide2 (pip install PySide2)
@@ -180,9 +163,7 @@ If there is any bug, [Let me know](https://github.com/AnonC0DER/PyLe#contact-me-
 1004. Exit  
 
 <-------------------------------------->
-# Screenshot : 
-![ScreenShot](img/PyLe.gif)
-![ScreenShot](img/PyLeGUI.jpg)
+
 
 # Contact me : 
 > AnonCODER@tutanota.com <br />
