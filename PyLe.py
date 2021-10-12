@@ -1615,7 +1615,7 @@ def other():
             again_1()
 
         else:
-            print(LIGHTRED_EX + '[!] Wrong Value')
+            print(Fore.LIGHTRED_EX + '[!] Wrong Value')
             again_1()
 
     # Diagrams
@@ -1638,7 +1638,7 @@ def other():
             again_1()
 
         else:
-            print(LIGHTRED_EX + '[!] Wrong Value')
+            print(Fore.LIGHTRED_EX + '[!] Wrong Value')
             again_1()
 
     # HiPlot
@@ -1661,7 +1661,7 @@ def other():
             again_1()
 
         else:
-            print(LIGHTRED_EX + '[!] Wrong Value')
+            print(Fore.LIGHTRED_EX + '[!] Wrong Value')
             again_1()
 
     # Selenium
@@ -1684,7 +1684,7 @@ def other():
             again_1()
 
         else:
-            print(LIGHTRED_EX + '[!] Wrong Value')
+            print(Fore.LIGHTRED_EX + '[!] Wrong Value')
             again_1()
 
     # Pandas
@@ -1707,7 +1707,7 @@ def other():
             again_1()
 
         else:
-            print(LIGHTRED_EX + '[!] Wrong Value')
+            print(Fore.LIGHTRED_EX + '[!] Wrong Value')
             again_1()
 
     # Delorean
@@ -1730,7 +1730,7 @@ def other():
             again_1()
 
         else:
-            print(LIGHTRED_EX + '[!] Wrong Value')
+            print(Fore.LIGHTRED_EX + '[!] Wrong Value')
             again_1()
 
     # Sh
@@ -1753,7 +1753,7 @@ def other():
             again_1()
 
         else:
-            print(LIGHTRED_EX + '[!] Wrong Value')
+            print(Fore.LIGHTRED_EX + '[!] Wrong Value')
             again_1()
 
     # PyMC
@@ -1776,7 +1776,7 @@ def other():
             again_1()
 
         else:
-            print(LIGHTRED_EX + '[!] Wrong Value')
+            print(Fore.LIGHTRED_EX + '[!] Wrong Value')
             again_1()
 
     # fuzzywuzzy
@@ -1799,7 +1799,7 @@ def other():
             again_1()
 
         else:
-            print(LIGHTRED_EX + '[!] Wrong Value')
+            print(Fore.LIGHTRED_EX + '[!] Wrong Value')
             again_1()
 
     # progressbar
@@ -1822,7 +1822,7 @@ def other():
             again_1()
 
         else:
-            print(LIGHTRED_EX + '[!] Wrong Value')
+            print(Fore.LIGHTRED_EX + '[!] Wrong Value')
             again_1()
 
 
@@ -2482,7 +2482,8 @@ def Feedback():
             print(Fore.LIGHTRED_EX + '[!] Wrong Email Address')
             sleep(1.3)
             system('clear')
-            send_email()
+            Feedback()
+
         else:    
             email_password = input(Fore.LIGHTMAGENTA_EX + 'Now, Enter your Password : ')
             user_message = input(Fore.LIGHTYELLOW_EX + 'Message : ')
