@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+![alt text](https://pyle-pythonlearning.ir/downloads/Github.jpg)
+
+# Donation : 
+https://pyle.ir.page/
+
+>>>>>>> parent of 2929a86 (Update README.md)
 # PyLe
 ## What's meaning of PyLe?
 > Learn and introduce Python libraries with PyLe
@@ -44,6 +52,11 @@ Easy & fast.
 
 > if You wanna know about next updates, please join PyLe's Telegram Channel.
 - https://t.me/PyLe_PythonLearning
+
+
+# Second Version Of PyLe Website
+> Please support it with share it.
+### https://pyle-pythonlearning.ir
 
 
 # The Second Version Of PyLe-GUI is Ready !
@@ -167,3 +180,4 @@ If there is any bug, [Let me know](https://github.com/AnonC0DER/PyLe#contact-me-
 
 # Contact me : 
 > AnonCODER@tutanota.com <br />
+> telegram : @AnonC0DER
