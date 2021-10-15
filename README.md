@@ -1,4 +1,4 @@
-![alt text](https://pyle-pythonlearning.ir/downloads/PyLeLogo2.jpg)
+![alt text](https://pyle-pythonlearning.ir/downloads/PyleLogo2.jpg)
 
 
 # PyLe
