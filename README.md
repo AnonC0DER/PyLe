@@ -49,11 +49,6 @@ Easy & fast.
 - https://t.me/PyLe_PythonLearning
 
 
-# Second Version Of PyLe Website
-> Please support it with share it.
-### https://pyle-pythonlearning.ir
-
-
 # The Second Version Of PyLe-GUI is Ready !
 ## Use PyQt5 For Version 1.0, PySide2 For Version 2.0 and pyinstaller for exe file.
 Please Send me your ideas for PyLe project.
